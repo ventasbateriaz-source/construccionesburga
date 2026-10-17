@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en San Juan de Lurigancho | BURGA</title>
+  <meta name="description" content="Consulta por construcción de viviendas, ampliaciones, albañilería y acabados en San Juan de Lurigancho. Contacta a BURGA para evaluar tu proyecto.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/san-juan-de-lurigancho.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Construcción y Remodelación en San Juan de Lurigancho | BURGA">
+  <meta property="og:description" content="Consulta por construcción, ampliación, remodelación y acabados para tu proyecto en San Juan de Lurigancho.">
+  <meta property="og:url" content="https://construccionesburga.com/zonas/san-juan-de-lurigancho.html">
+
+  <style>
+    :root {
+      --blue: #102746;
+      --blue-light: #1d4268;
+      --red: #e51e3d;
+      --text: #263449;
+      --muted: #5b6677;
+      --light: #f5f7fa;
+      --border: #e4e9f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body.sjl-page {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a { transition: color .2s ease, background .2s ease; }
+
+    .sjl-container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* ENCABEZADO */
+
+    .sjl-header {
+      padding: 12px 20px;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(16, 39, 70, .06);
+      position: relative;
+      z-index: 100;
+    }
+
+    .sjl-header-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .sjl-logo {
+      display: block;
+      flex: 0 1 210px;
+      max-width: 210px;
+      line-height: 0;
+    }
+
+    .sjl-logo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .sjl-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .sjl-nav a {
+      color: var(--blue);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .sjl-nav a:hover { color: var(--red); }
+
+    .sjl-contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 11px 16px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .sjl-contact-button:hover { background: #bd1731; }
+
+    .sjl-menu-toggle { display: none; }
+
+    /* PORTADA */
+
+    .sjl-hero {
+      padding: 78px 0;
+      color: #fff;
+      background: linear-gradient(120deg, var(--blue), var(--blue-light));
+    }
+
+    .sjl-hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sjl-eyebrow {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: #ff8291;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .sjl-hero h1 {
+      margin: 12px 0 18px;
+      color: #fff;
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.17;
+    }
+
+    .sjl-hero p {
+      max-width: 740px;
+      margin: 0 auto 26px;
+      color: #edf3fa;
+      font-size: 17px;
+    }
+
+    .sjl-primary-button {
+      display: inline-block;
+      padding: 13px 22px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .sjl-primary-button:hover { background: #bd1731; }
+
+    /* SECCIONES */
+
+    .sjl-section { padding: 68px 0; }
+
+    .sjl-section-light { background: var(--light); }
+
+    .sjl-section-heading {
+      max-width: 780px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+
+    .sjl-section-heading h2 {
+      margin: 0 0 14px;
+      color: var(--blue);
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .sjl-section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* SERVICIOS */
+
+    .sjl-service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .sjl-service-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      height: 100%;
+      padding: 25px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(16, 39, 70, .04);
+    }
+
+    .sjl-service-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 14px;
+      color: var(--red);
+      background: #fff0f2;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .sjl-service-card h3 {
+      margin: 0 0 10px;
+      color: var(--blue);
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .sjl-service-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .sjl-service-card a {
+      margin-top: auto;
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .sjl-service-card a:hover { text-decoration: underline; }
+
+    /* INFORMACIÓN */
+
+    .sjl-info-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+      gap: 35px;
+      align-items: start;
+    }
+
+    .sjl-info-layout h2 {
+      margin-top: 0;
+      color: var(--blue);
+      font-size: clamp(26px, 3vw, 34px);
+      line-height: 1.3;
+    }
+
+    .sjl-info-layout h3 { color: var(--blue); }
+
+    .sjl-info-layout p,
+    .sjl-info-layout li { color: var(--muted); }
+
+    .sjl-info-panel {
+      padding: 25px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .sjl-info-panel h3 { margin-top: 0; }
+
+    .sjl-info-panel ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    /* PASOS */
+
+    .sjl-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .sjl-step {
+      padding: 24px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .sjl-step span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 12px;
+      color: var(--red);
+      background: #fff0f2;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .sjl-step h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 19px;
+    }
+
+    .sjl-step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* ENLACES RELACIONADOS */
+
+    .sjl-related-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .sjl-related-links a {
+      padding: 10px 15px;
+      color: var(--blue);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .sjl-related-links a:hover {
+      color: var(--red);
+      border-color: var(--red);
+    }
+
+    /* CTA Y PIE */
+
+    .sjl-cta {
+      padding: 60px 0;
+      color: #fff;
+      background: var(--blue);
+      text-align: center;
+    }
+
+    .sjl-cta h2 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.3;
+    }
+
+    .sjl-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+    }
+
+    .sjl-footer {
+      padding: 22px 16px;
+      color: #fff;
+      background: #091a30;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .sjl-footer p { margin: 0; }
+
+    .sjl-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      padding: 13px 18px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+      .sjl-header-inner { gap: 12px; }
+      .sjl-logo { flex-basis: 170px; max-width: 170px; }
+      .sjl-nav { gap: 10px; }
+      .sjl-nav a { font-size: 13px; }
+    }
+
+    @media (max-width: 900px) {
+      .sjl-header-inner { flex-wrap: wrap; }
+
+      .sjl-logo {
+        flex: 0 1 180px;
+        max-width: 180px;
+      }
+
+      .sjl-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        color: var(--blue);
+        background: #fff;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .sjl-nav {
+        display: none;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .sjl-nav.is-open { display: flex; }
+
+      .sjl-nav a {
+        display: block;
+        padding: 11px 8px;
+        font-size: 15px;
+      }
+
+      .sjl-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .sjl-info-layout { grid-template-columns: 1fr; }
+
+      .sjl-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .sjl-container { width: calc(100% - 32px); }
+      .sjl-header { padding: 12px; }
+
+      .sjl-logo {
+        flex-basis: 140px;
+        max-width: 140px;
+      }
+
+      .sjl-contact-button {
+        padding: 9px 11px;
+        font-size: 13px;
+      }
+
+      .sjl-hero { padding: 54px 0; }
+      .sjl-hero h1 { font-size: 34px; }
+      .sjl-hero p { font-size: 16px; }
+      .sjl-section { padding: 48px 0; }
+
+      .sjl-service-grid,
+      .sjl-steps { grid-template-columns: 1fr; }
+
+      .sjl-service-card,
+      .sjl-step,
+      .sjl-info-panel { padding: 22px; }
+
+      .sjl-section-heading { margin-bottom: 28px; }
+      .sjl-cta { padding: 48px 0; }
+
+      .sjl-whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body class="sjl-page">
+
+  <!-- ENCABEZADO -->
+  <header class="sjl-header">
+    <div class="sjl-header-inner">
+
+      <a href="../index.html" class="sjl-logo" aria-label="BURGA - Inicio">
+        <img
+          src="../imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="250"
+          height="80">
+      </a>
+
+      <button
+        class="sjl-menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="sjl-menu">☰</button>
+
+      <nav class="sjl-nav" id="sjl-menu" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../index.html#servicios">Servicios</a>
+        <a href="../proyectos.html">Proyectos</a>
+        <a href="../zonas-de-atencion.html">Zonas de atención</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+
+      <a
+        class="sjl-contact-button"
+        href="https://wa.me/51906469942"
+        target="_blank"
+        rel="noopener noreferrer">Cotizar</a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="sjl-hero">
+      <div class="sjl-container sjl-hero-content">
+
+        <span class="sjl-eyebrow">BURGA Construcciones &amp; Acabados</span>
+
+        <h1>Construcción y remodelación en San Juan de Lurigancho</h1>
+
+        <p>
+          ¿Estás pensando en construir, ampliar o renovar un espacio en San Juan
+          de Lurigancho? Consulta por nuestros servicios de albañilería,
+          instalaciones y acabados para conocer las opciones para tu obra.
+        </p>
+
+        <a
+          class="sjl-primary-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20proyecto%20en%20San%20Juan%20de%20Lurigancho."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por mi proyecto</a>
+
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="sjl-section">
+      <div class="sjl-container">
+
+        <div class="sjl-section-heading">
+          <span class="sjl-eyebrow">Servicios relacionados</span>
+          <h2>Construcción y acabados en San Juan de Lurigancho</h2>
+          <p>
+            Revisa los servicios que puedes consultar para tu vivienda,
+            local comercial u otro espacio. Cada proyecto requiere evaluar
+            sus características y necesidades.
+          </p>
+        </div>
+
+        <div class="sjl-service-grid">
+
+          <article class="sjl-service-card">
+            <span class="sjl-service-number">01</span>
+            <h3>Construcción de viviendas</h3>
+            <p>Consulta por proyectos de construcción residencial y trabajos relacionados con tu vivienda.</p>
+            <a href="../servicios/construccion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="sjl-service-card">
+            <span class="sjl-service-number">02</span>
+            <h3>Ampliación de viviendas</h3>
+            <p>Información sobre proyectos para crear nuevos ambientes o ampliar espacios existentes.</p>
+            <a href="../servicios/ampliacion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="sjl-service-card">
+            <span class="sjl-service-number">03</span>
+            <h3>Remodelación de casas</h3>
+            <p>Consulta por renovación de ambientes, mejoras de espacios y cambios de acabados.</p>
+            <a href="../servicios/remodelacion-de-casas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="sjl-service-card">
+            <span class="sjl-service-number">04</span>
+            <h3>Albañilería y muros</h3>
+            <p>Trabajos relacionados con muros, divisiones y albañilería general.</p>
+            <a href="../servicios/albanileria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="sjl-service-card">
+            <span class="sjl-service-number">05</span>
+            <h3>Instalación de pisos y mayólicas</h3>
+            <p>Consulta por instalación de revestimientos para pisos, baños, cocinas y paredes.</p>
+            <a href="../servicios/instalacion-de-pisos.html">Conocer servicio →</a>
+          </article>
+
+          <article class="sjl-service-card">
+            <span class="sjl-service-number">06</span>
+            <h3>Gasfitería e instalaciones eléctricas</h3>
+            <p>Consulta por trabajos sanitarios y eléctricos según las condiciones de tu inmueble.</p>
+            <a href="../servicios/gasfiteria.html">Conocer servicio →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN LOCAL -->
+    <section class="sjl-section sjl-section-light">
+      <div class="sjl-container sjl-info-layout">
+
+        <div>
+          <span class="sjl-eyebrow">Proyectos en San Juan de Lurigancho</span>
+
+          <h2>Organiza tu proyecto de construcción en San Juan de Lurigancho</h2>
+
+          <p>
+            Para planificar una obra, conviene definir el tipo de trabajo,
+            las condiciones actuales del inmueble y el resultado que deseas
+            conseguir. Estos datos ayudan a orientar la consulta inicial.
+          </p>
+
+          <p>
+            Si necesitas construir, ampliar o remodelar una vivienda en San Juan
+            de Lurigancho, puedes compartir información básica y fotografías
+            del espacio para explicar mejor lo que necesitas.
+          </p>
+
+          <p>
+            Cuando el proyecto involucra estructuras, ampliaciones de pisos
+            o modificaciones importantes, debe realizarse la evaluación técnica
+            correspondiente antes de ejecutar los trabajos.
+          </p>
+        </div>
+
+        <aside class="sjl-info-panel">
+          <h3>¿Qué información puedes compartir?</h3>
+          <ul>
+            <li>Ubicación aproximada de la obra.</li>
+            <li>Tipo de trabajo que necesitas.</li>
+            <li>Medidas aproximadas del espacio.</li>
+            <li>Estado actual del inmueble.</li>
+            <li>Fotografías del área, si están disponibles.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- PASOS -->
+    <section class="sjl-section">
+      <div class="sjl-container">
+
+        <div class="sjl-section-heading">
+          <span class="sjl-eyebrow">Cómo empezar</span>
+          <h2>¿Cómo consultar por tu obra?</h2>
+          <p>
+            Comparte los detalles principales para explicar el trabajo
+            que necesitas y consultar la disponibilidad del servicio.
+          </p>
+        </div>
+
+        <div class="sjl-steps">
+
+          <article class="sjl-step">
+            <span>01</span>
+            <h3>Describe el trabajo</h3>
+            <p>Indica si buscas construir, ampliar, remodelar o realizar acabados.</p>
+          </article>
+
+          <article class="sjl-step">
+            <span>02</span>
+            <h3>Comparte los detalles</h3>
+            <p>Menciona las medidas aproximadas y las condiciones actuales del espacio.</p>
+          </article>
+
+          <article class="sjl-step">
+            <span>03</span>
+            <h3>Consulta las opciones</h3>
+            <p>Coordina la información necesaria para evaluar el alcance del proyecto.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ENLACES RELACIONADOS -->
+    <section class="sjl-section sjl-section-light">
+      <div class="sjl-container">
+
+        <div class="sjl-section-heading">
+          <span class="sjl-eyebrow">Explora BURGA</span>
+          <h2>Más información para tu proyecto</h2>
+          <p>
+            Conoce otros servicios y revisa las zonas de atención
+            disponibles en nuestro sitio.
+          </p>
+        </div>
+
+        <div class="sjl-related-links">
+          <a href="../servicios/techos-aligerados.html">Techos aligerados</a>
+          <a href="../servicios/columnas-y-vigas.html">Columnas y vigas</a>
+          <a href="../servicios/tarrajeo.html">Tarrajeo</a>
+          <a href="../servicios/instalacion-de-mayolicas.html">Mayólicas</a>
+          <a href="../zonas-de-atencion.html">Todas las zonas de atención</a>
+          <a href="../proyectos.html">Proyectos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="sjl-cta">
+      <div class="sjl-container">
+
+        <h2>¿Necesitas construir o remodelar en San Juan de Lurigancho?</h2>
+
+        <p>
+          Escríbenos por WhatsApp, cuéntanos qué trabajo necesitas y comparte
+          los detalles de tu proyecto para consultar la disponibilidad de atención.
+        </p>
+
+        <a
+          class="sjl-primary-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20servicio%20de%20construcci%C3%B3n%20en%20San%20Juan%20de%20Lurigancho."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por WhatsApp</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="sjl-footer">
+    <p>Duo Grafico - todos los derechos reservados</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a
+    class="sjl-whatsapp-float"
+    href="https://wa.me/51906469942"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">WhatsApp</a>
+
+  <!-- MENÚ MÓVIL -->
+  <script>
+    (function () {
+      const button = document.querySelector('.sjl-menu-toggle');
+      const nav = document.querySelector('.sjl-nav');
+
+      if (!button || !nav) return;
+
+      button.addEventListener('click', function () {
+        const isOpen = nav.classList.toggle('is-open');
+
+        button.setAttribute('aria-expanded', String(isOpen));
+        button.setAttribute(
+          'aria-label',
+          isOpen ? 'Cerrar menú' : 'Abrir menú'
+        );
+        button.textContent = isOpen ? '×' : '☰';
+      });
+    })();
+  </script>
+
+</body>
+</html>

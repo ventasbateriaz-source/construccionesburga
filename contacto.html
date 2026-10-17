@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar cotización de construcción | Construcciones Burga</title>
+    
+<link rel="icon" type="image/png" href="imagenes/logo/favicon.png">
+
+    <meta name="description" content="Solicita una cotización para trabajos de construcción, albañilería, remodelación y acabados. Consulta por WhatsApp a Construcciones Burga.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#062653">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo" aria-label="Construcciones Burga, inicio">
+            <img src="imagenes/logo/logo-burga.webp"
+                 alt="BURGA Construcciones y Acabados"
+                 class="logo-img">
+        </a>
+
+        <a href="index.html" class="btn btn-outline-dark">Volver al inicio</a>
+    </div>
+</header>
+
+<main>
+    <section class="contact-hero">
+        <div class="container">
+            <span class="eyebrow">HABLEMOS DE TU PROYECTO</span>
+            <h1>Solicita tu cotización</h1>
+            <p>
+                Cuéntanos qué trabajo necesitas y dónde se realizará.
+                Prepararemos tu consulta para continuar la coordinación por WhatsApp.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container contact-layout">
+
+            <div class="contact-info">
+                <span class="eyebrow">CONSTRUCCIONES BURGA</span>
+                <h2>¿Qué necesitas construir o renovar?</h2>
+
+                <p>
+                    Completa los datos básicos de tu proyecto. Podrás revisar
+                    el mensaje antes de enviarlo desde WhatsApp.
+                </p>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon">01</span>
+                    <div>
+                        <h3>Cuéntanos tu necesidad</h3>
+                        <p>Selecciona el servicio que estás buscando.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon">02</span>
+                    <div>
+                        <h3>Indica tu ubicación</h3>
+                        <p>Escribe el distrito donde se realizará el trabajo.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon">03</span>
+                    <div>
+                        <h3>Continúa por WhatsApp</h3>
+                        <p>Se abrirá una conversación con tu consulta preparada.</p>
+                    </div>
+                </div>
+
+                <a class="contact-direct"
+                   href="https://wa.me/51906469942"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    WhatsApp: 906 469 942 →
+                </a>
+            </div>
+
+            <div class="contact-form-card">
+                <h2>Datos de tu proyecto</h2>
+                <p class="form-description">
+                    Los campos marcados con * son obligatorios.
+                </p>
+
+                <form id="cotizacion-form">
+
+                    <div class="form-field">
+                        <label for="nombre">Tu nombre *</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="¿Cómo te llamas?"
+                            autocomplete="name"
+                            required
+                            maxlength="100">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="servicio">Servicio que necesitas *</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option>Albañilería</option>
+                            <option>Construcción de viviendas</option>
+                            <option>Remodelación de casas</option>
+                            <option>Gasfitería</option>
+                            <option>Instalaciones eléctricas</option>
+                            <option>Tarrajeo</option>
+                            <option>Instalación de mayólicas y porcelanato</option>
+                            <option>Instalación de pisos</option>
+                            <option>Techos aligerados y concreto</option>
+                            <option>Ampliación de viviendas</option>
+                            <option>Construcción de muros</option>
+                            <option>Columnas y vigas</option>
+                            <option>Nivelación de terrenos</option>
+                            <option>Pisos de concreto</option>
+                            <option>Otro servicio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="distrito">Distrito del proyecto *</label>
+                        <input
+                            type="text"
+                            id="distrito"
+                            name="distrito"
+                            placeholder="Ej. Comas, Ate, Callao"
+                            required
+                            maxlength="100">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="tipo-inmueble">Tipo de inmueble</label>
+                        <select id="tipo-inmueble" name="tipo-inmueble">
+                            <option value="">Selecciona una opción</option>
+                            <option>Casa</option>
+                            <option>Departamento</option>
+                            <option>Local comercial</option>
+                            <option>Oficina</option>
+                            <option>Terreno</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="detalle">Cuéntanos un poco más</label>
+                        <textarea
+                            id="detalle"
+                            name="detalle"
+                            rows="4"
+                            maxlength="1000"
+                            placeholder="Describe el trabajo que necesitas, las medidas aproximadas o cualquier detalle importante."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-red contact-submit">
+                        Continuar por WhatsApp →
+                    </button>
+
+                    <p class="form-privacy">
+                        Al continuar, se abrirá WhatsApp para que revises y
+                        envíes tu mensaje. No se envía automáticamente.
+                    </p>
+
+                    <p id="form-status" class="form-status" role="status"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <a href="index.html" class="logo logo-footer">
+            <img src="imagenes/logo/logo-burga.webp"
+                 alt="BURGA Construcciones y Acabados"
+                 class="logo-img">
+        </a>
+
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <a href="https://wa.me/51906469942"
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp: 906 469 942
+            </a>
+            <p>Lima Metropolitana y Callao</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="proyectos.html">Proyectos</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© <span id="current-year">2026</span> Construcciones Burga. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("cotizacion-form");
+    const status = document.getElementById("form-status");
+    const year = document.getElementById("current-year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) return;
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const servicio = document.getElementById("servicio").value;
+        const distrito = document.getElementById("distrito").value.trim();
+        const inmueble = document.getElementById("tipo-inmueble").value;
+        const detalle = document.getElementById("detalle").value.trim();
+
+        const mensaje = [
+            "Hola, Construcciones Burga. Quisiera solicitar una cotización.",
+            "",
+            "Nombre: " + nombre,
+            "Servicio: " + servicio,
+            "Distrito: " + distrito,
+            inmueble ? "Tipo de inmueble: " + inmueble : "",
+            detalle ? "Detalles del proyecto: " + detalle : ""
+        ].filter(Boolean).join("\n");
+
+        const url = "https://wa.me/51906469942?text=" +
+            encodeURIComponent(mensaje);
+
+        status.textContent = "Abriendo WhatsApp...";
+        window.open(url, "_blank", "noopener,noreferrer");
+    });
+});
+</script>
+
+</body>
+</html>

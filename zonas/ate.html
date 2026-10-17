@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en Ate | BURGA</title>
+  
+<link rel="icon" type="image/png" href="imagenes/logo/favicon.png">
+
+  <meta name="description" content="Consulta por servicios de construcción, remodelación, albañilería y acabados en Ate, Lima. Comunícate con BURGA y cotiza tu proyecto.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/ate.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Construcción y Remodelación en Ate | BURGA">
+  <meta property="og:description" content="Información sobre construcción, remodelación y acabados para proyectos en Ate. Consulta con BURGA.">
+  <meta property="og:url" content="https://construccionesburga.com/zonas/ate.html">
+
+  <style>
+    :root {
+      --blue: #102746;
+      --blue-light: #1d4268;
+      --red: #e51e3d;
+      --text: #263449;
+      --muted: #5b6677;
+      --light: #f5f7fa;
+      --border: #e4e9f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body.ate-page {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      transition: color .2s ease, background .2s ease;
+    }
+
+    .ate-container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* ENCABEZADO */
+
+    .ate-header {
+      padding: 12px 20px;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(16, 39, 70, .06);
+      position: relative;
+      z-index: 100;
+    }
+
+    .ate-header-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .ate-logo {
+      display: block;
+      flex: 0 1 210px;
+      max-width: 210px;
+      line-height: 0;
+    }
+
+    .ate-logo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .ate-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .ate-nav a {
+      color: var(--blue);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .ate-nav a:hover,
+    .ate-nav a[aria-current="page"] {
+      color: var(--red);
+    }
+
+    .ate-contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 11px 16px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .ate-contact-button:hover {
+      background: #bd1731;
+    }
+
+    .ate-menu-toggle {
+      display: none;
+    }
+
+    /* PORTADA */
+
+    .ate-hero {
+      padding: 78px 0;
+      color: #fff;
+      background: linear-gradient(120deg, var(--blue), var(--blue-light));
+    }
+
+    .ate-hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ate-eyebrow {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: #ff8291;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .ate-hero h1 {
+      margin: 12px 0 18px;
+      color: #fff;
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.17;
+    }
+
+    .ate-hero p {
+      max-width: 740px;
+      margin: 0 auto 26px;
+      color: #edf3fa;
+      font-size: 17px;
+    }
+
+    .ate-primary-button {
+      display: inline-block;
+      padding: 13px 22px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .ate-primary-button:hover {
+      background: #bd1731;
+    }
+
+    /* SECCIONES */
+
+    .ate-section {
+      padding: 68px 0;
+    }
+
+    .ate-section-light {
+      background: var(--light);
+    }
+
+    .ate-section-heading {
+      max-width: 780px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+
+    .ate-section-heading h2 {
+      margin: 0 0 14px;
+      color: var(--blue);
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .ate-section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* SERVICIOS */
+
+    .ate-service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .ate-service-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      height: 100%;
+      padding: 25px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(16, 39, 70, .04);
+    }
+
+    .ate-service-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 14px;
+      color: var(--red);
+      background: #fff0f2;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .ate-service-card h3 {
+      margin: 0 0 10px;
+      color: var(--blue);
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .ate-service-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .ate-service-card a {
+      margin-top: auto;
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .ate-service-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* INFORMACIÓN */
+
+    .ate-info-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+      gap: 35px;
+      align-items: start;
+    }
+
+    .ate-info-layout h2 {
+      margin-top: 0;
+      color: var(--blue);
+      font-size: clamp(26px, 3vw, 34px);
+      line-height: 1.3;
+    }
+
+    .ate-info-layout h3 {
+      color: var(--blue);
+    }
+
+    .ate-info-layout p,
+    .ate-info-layout li {
+      color: var(--muted);
+    }
+
+    .ate-info-panel {
+      padding: 25px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .ate-info-panel h3 {
+      margin-top: 0;
+    }
+
+    .ate-info-panel ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    /* PASOS */
+
+    .ate-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .ate-step {
+      padding: 24px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .ate-step span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 12px;
+      color: var(--red);
+      background: #fff0f2;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .ate-step h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 19px;
+    }
+
+    .ate-step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* ENLACES RELACIONADOS */
+
+    .ate-related-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .ate-related-links a {
+      padding: 10px 15px;
+      color: var(--blue);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .ate-related-links a:hover {
+      color: var(--red);
+      border-color: var(--red);
+    }
+
+    /* CTA */
+
+    .ate-cta {
+      padding: 60px 0;
+      color: #fff;
+      background: var(--blue);
+      text-align: center;
+    }
+
+    .ate-cta h2 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.3;
+    }
+
+    .ate-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+    }
+
+    /* PIE */
+
+    .ate-footer {
+      padding: 22px 16px;
+      color: #fff;
+      background: #091a30;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .ate-footer p {
+      margin: 0;
+    }
+
+    .ate-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      padding: 13px 18px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+      .ate-header-inner {
+        gap: 12px;
+      }
+
+      .ate-logo {
+        flex-basis: 170px;
+        max-width: 170px;
+      }
+
+      .ate-nav {
+        gap: 10px;
+      }
+
+      .ate-nav a {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .ate-header-inner {
+        flex-wrap: wrap;
+      }
+
+      .ate-logo {
+        flex: 0 1 180px;
+        max-width: 180px;
+      }
+
+      .ate-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        color: var(--blue);
+        background: #fff;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .ate-nav {
+        display: none;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .ate-nav.is-open {
+        display: flex;
+      }
+
+      .ate-nav a {
+        display: block;
+        padding: 11px 8px;
+        font-size: 15px;
+      }
+
+      .ate-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ate-info-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .ate-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .ate-container {
+        width: calc(100% - 32px);
+      }
+
+      .ate-header {
+        padding: 12px;
+      }
+
+      .ate-logo {
+        flex-basis: 140px;
+        max-width: 140px;
+      }
+
+      .ate-contact-button {
+        padding: 9px 11px;
+        font-size: 13px;
+      }
+
+      .ate-hero {
+        padding: 54px 0;
+      }
+
+      .ate-hero h1 {
+        font-size: 34px;
+      }
+
+      .ate-hero p {
+        font-size: 16px;
+      }
+
+      .ate-section {
+        padding: 48px 0;
+      }
+
+      .ate-service-grid,
+      .ate-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .ate-service-card,
+      .ate-step,
+      .ate-info-panel {
+        padding: 22px;
+      }
+
+      .ate-section-heading {
+        margin-bottom: 28px;
+      }
+
+      .ate-cta {
+        padding: 48px 0;
+      }
+
+      .ate-whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="ate-page">
+
+  <!-- ENCABEZADO -->
+  <header class="ate-header">
+    <div class="ate-header-inner">
+
+      <a href="../index.html" class="ate-logo" aria-label="BURGA - Inicio">
+        <img
+          src="../imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="250"
+          height="80">
+      </a>
+
+      <button
+        class="ate-menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="ate-menu">☰</button>
+
+      <nav class="ate-nav" id="ate-menu" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../index.html#servicios">Servicios</a>
+        <a href="../proyectos.html">Proyectos</a>
+        <a href="../zonas-de-atencion.html">Zonas de atención</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+
+      <a
+        class="ate-contact-button"
+        href="https://wa.me/51906469942"
+        target="_blank"
+        rel="noopener noreferrer">Cotizar</a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="ate-hero">
+      <div class="ate-container ate-hero-content">
+
+        <span class="ate-eyebrow">BURGA Construcciones &amp; Acabados</span>
+
+        <h1>Construcción y remodelación en Ate</h1>
+
+        <p>
+          ¿Tienes un proyecto de construcción, ampliación o renovación en Ate?
+          Consulta por nuestros servicios de albañilería, instalaciones y acabados
+          para conocer las opciones según las características de tu obra.
+        </p>
+
+        <a
+          class="ate-primary-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n%20en%20Ate."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por mi proyecto</a>
+
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="ate-section">
+      <div class="ate-container">
+
+        <div class="ate-section-heading">
+          <span class="ate-eyebrow">Servicios relacionados</span>
+          <h2>Trabajos de construcción y acabados en Ate</h2>
+          <p>
+            Conoce algunos de los servicios que puedes consultar para tu vivienda,
+            local comercial u otro espacio. El alcance se define según cada proyecto.
+          </p>
+        </div>
+
+        <div class="ate-service-grid">
+
+          <article class="ate-service-card">
+            <span class="ate-service-number">01</span>
+            <h3>Construcción de viviendas</h3>
+            <p>
+              Consulta por proyectos de construcción residencial y trabajos
+              relacionados con el desarrollo de una vivienda.
+            </p>
+            <a href="../servicios/construccion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="ate-service-card">
+            <span class="ate-service-number">02</span>
+            <h3>Remodelación de casas</h3>
+            <p>
+              Información sobre renovación de ambientes, mejoras de espacios
+              y cambios de acabados.
+            </p>
+            <a href="../servicios/remodelacion-de-casas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="ate-service-card">
+            <span class="ate-service-number">03</span>
+            <h3>Albañilería y muros</h3>
+            <p>
+              Trabajos relacionados con muros, divisiones, reparaciones
+              y albañilería general.
+            </p>
+            <a href="../servicios/albanileria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="ate-service-card">
+            <span class="ate-service-number">04</span>
+            <h3>Instalación de pisos</h3>
+            <p>
+              Consulta por colocación de pisos y revestimientos para
+              distintos ambientes.
+            </p>
+            <a href="../servicios/instalacion-de-pisos.html">Conocer servicio →</a>
+          </article>
+
+          <article class="ate-service-card">
+            <span class="ate-service-number">05</span>
+            <h3>Gasfitería</h3>
+            <p>
+              Información sobre instalaciones sanitarias y trabajos de
+              reparación que requiera tu espacio.
+            </p>
+            <a href="../servicios/gasfiteria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="ate-service-card">
+            <span class="ate-service-number">06</span>
+            <h3>Instalaciones eléctricas</h3>
+            <p>
+              Consulta por trabajos eléctricos para viviendas y negocios,
+              según las condiciones de la instalación.
+            </p>
+            <a href="../servicios/instalaciones-electricas.html">Conocer servicio →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN LOCAL -->
+    <section class="ate-section ate-section-light">
+      <div class="ate-container ate-info-layout">
+
+        <div>
+          <span class="ate-eyebrow">Proyectos en Ate</span>
+
+          <h2>Planifica tu proyecto de construcción en Ate</h2>
+
+          <p>
+            Antes de iniciar una obra, es importante definir qué trabajos se
+            necesitan, las condiciones actuales del espacio y el resultado que
+            se espera obtener.
+          </p>
+
+          <p>
+            Si deseas construir, ampliar o remodelar una vivienda en Ate,
+            puedes compartir la información básica de tu proyecto para consultar
+            qué trabajos podrían realizarse y qué aspectos se deben evaluar.
+          </p>
+
+          <p>
+            En trabajos que involucren estructuras, ampliaciones de pisos o
+            modificaciones importantes, es necesario contar con la evaluación
+            técnica correspondiente antes de ejecutar la obra.
+          </p>
+        </div>
+
+        <aside class="ate-info-panel">
+          <h3>Información útil para tu consulta</h3>
+
+          <ul>
+            <li>Distrito y ubicación aproximada del proyecto.</li>
+            <li>Tipo de trabajo que necesitas realizar.</li>
+            <li>Medidas aproximadas del espacio.</li>
+            <li>Estado actual de la vivienda o inmueble.</li>
+            <li>Fotografías del área, si las tienes disponibles.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="ate-section">
+      <div class="ate-container">
+
+        <div class="ate-section-heading">
+          <span class="ate-eyebrow">Cómo empezar</span>
+          <h2>¿Cómo consultar por tu obra en Ate?</h2>
+          <p>
+            Comparte los datos básicos para explicar el trabajo que necesitas
+            y consultar la disponibilidad del servicio.
+          </p>
+        </div>
+
+        <div class="ate-steps">
+
+          <article class="ate-step">
+            <span>01</span>
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>
+              Indica si buscas construir, remodelar, ampliar o realizar acabados.
+            </p>
+          </article>
+
+          <article class="ate-step">
+            <span>02</span>
+            <h3>Comparte los detalles</h3>
+            <p>
+              Menciona las medidas aproximadas, la ubicación y las condiciones
+              actuales del espacio.
+            </p>
+          </article>
+
+          <article class="ate-step">
+            <span>03</span>
+            <h3>Consulta las opciones</h3>
+            <p>
+              Coordina la información necesaria para evaluar el alcance
+              y las condiciones de tu proyecto.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS SERVICIOS Y DISTRITOS -->
+    <section class="ate-section ate-section-light">
+      <div class="ate-container">
+
+        <div class="ate-section-heading">
+          <span class="ate-eyebrow">Explora BURGA</span>
+          <h2>Más información para tu proyecto</h2>
+          <p>
+            Revisa otros servicios y las zonas con páginas informativas
+            dentro de nuestro sitio.
+          </p>
+        </div>
+
+        <div class="ate-related-links">
+          <a href="../servicios/techos-aligerados.html">Techos aligerados</a>
+          <a href="../servicios/tarrajeo.html">Tarrajeo</a>
+          <a href="../servicios/instalacion-de-mayolicas.html">Mayólicas</a>
+          <a href="../servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+          <a href="../zonas-de-atencion.html">Todas las zonas de atención</a>
+          <a href="../proyectos.html">Proyectos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="ate-cta">
+      <div class="ate-container">
+
+        <h2>¿Buscas un servicio de construcción en Ate?</h2>
+
+        <p>
+          Escríbenos por WhatsApp, cuéntanos qué trabajo necesitas y comparte
+          los detalles de tu proyecto para consultar la disponibilidad de atención.
+        </p>
+
+        <a
+          class="ate-primary-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20estoy%20buscando%20un%20servicio%20de%20construcci%C3%B3n%20o%20acabados%20en%20Ate."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por WhatsApp</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="ate-footer">
+    <p>Duo Grafico - todos los derechos reservados</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a
+    class="ate-whatsapp-float"
+    href="https://wa.me/51906469942"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">WhatsApp</a>
+
+  <!-- MENÚ MÓVIL -->
+  <script>
+    (function () {
+      const button = document.querySelector('.ate-menu-toggle');
+      const nav = document.querySelector('.ate-nav');
+
+      if (!button || !nav) return;
+
+      button.addEventListener('click', function () {
+        const isOpen = nav.classList.toggle('is-open');
+
+        button.setAttribute('aria-expanded', String(isOpen));
+        button.setAttribute(
+          'aria-label',
+          isOpen ? 'Cerrar menú' : 'Abrir menú'
+        );
+        button.textContent = isOpen ? '×' : '☰';
+      });
+    })();
+  </script>
+
+</body>
+</html>

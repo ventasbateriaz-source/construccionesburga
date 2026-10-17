@@ -1,0 +1,865 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Proyectos de Construcción en Lima y Callao | BURGA</title>
+  
+<link rel="icon" type="image/png" href="imagenes/logo/favicon.png">
+
+  <meta name="description" content="Conoce las categorías de proyectos de construcción, estructuras, acabados y remodelación de BURGA en Lima y Callao. Consulta por tu proyecto.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/proyectos.html">
+
+  <style>
+    :root {
+      --burga-blue: #102746;
+      --burga-blue-light: #1d4268;
+      --burga-red: #e51e3d;
+      --burga-text: #263449;
+      --burga-muted: #5b6677;
+      --burga-light: #f5f7fa;
+      --burga-border: #e4e9f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body.projects-page {
+      margin: 0;
+      width: 100%;
+      color: var(--burga-text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .projects-page img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .projects-container {
+      width: min(1120px, calc(100% - 40px));
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    /* ENCABEZADO */
+
+    .projects-page .site-header {
+      width: 100%;
+      padding: 12px 20px;
+      background: #fff;
+      position: relative;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(16, 39, 70, 0.06);
+    }
+
+    .projects-page .header-container {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .projects-page .logo {
+      display: block;
+      flex: 0 0 220px;
+      max-width: 220px;
+      line-height: 0;
+    }
+
+    .projects-page .logo img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .projects-page .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .projects-page .main-nav a {
+      color: var(--burga-blue);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .projects-page .main-nav a:hover,
+    .projects-page .main-nav a[aria-current="page"] {
+      color: var(--burga-red);
+    }
+
+    .projects-page .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 11px 17px;
+      border-radius: 7px;
+      background: var(--burga-red);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .projects-page .btn-whatsapp:hover,
+    .projects-page .project-button:hover {
+      background: #bd1731;
+    }
+
+    .projects-page .menu-toggle {
+      display: none;
+    }
+
+    .projects-page .nav-dropdown {
+      position: relative;
+    }
+
+    .projects-page .dropdown-trigger {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .projects-page .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 245px;
+      max-height: 70vh;
+      overflow-y: auto;
+      padding: 8px 0;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      z-index: 200;
+    }
+
+    .projects-page .dropdown-menu a {
+      display: block;
+      padding: 9px 15px;
+    }
+
+    .projects-page .dropdown-menu a:hover {
+      background: var(--burga-light);
+    }
+
+    @media (min-width: 901px) {
+      .projects-page .nav-dropdown:hover > .dropdown-menu,
+      .projects-page .nav-dropdown:focus-within > .dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* PORTADA */
+
+    .projects-hero {
+      width: 100%;
+      padding: 76px 0;
+      color: #fff;
+      background: linear-gradient(
+        120deg,
+        var(--burga-blue),
+        var(--burga-blue-light)
+      );
+    }
+
+    .projects-hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .projects-eyebrow {
+      display: inline-block;
+      color: #ff8291;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .projects-hero h1 {
+      margin: 14px 0 18px;
+      color: #fff;
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.15;
+    }
+
+    .projects-hero p {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+      font-size: 17px;
+    }
+
+    .project-button {
+      display: inline-block;
+      padding: 13px 22px;
+      background: var(--burga-red);
+      color: #fff;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+
+    /* SECCIONES */
+
+    .projects-section {
+      width: 100%;
+      padding: 70px 0;
+    }
+
+    .projects-section-light {
+      background: var(--burga-light);
+    }
+
+    .projects-heading {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+
+    .projects-heading h2 {
+      margin: 0 0 14px;
+      color: var(--burga-blue);
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .projects-heading p {
+      margin: 0;
+      color: var(--burga-muted);
+    }
+
+    /* GALERÍA */
+
+    .projects-grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid var(--burga-border);
+      border-radius: 14px;
+      box-shadow: 0 6px 22px rgba(16, 39, 70, 0.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      background: #e8edf3;
+    }
+
+    .project-card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+    }
+
+    .project-category {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--burga-red);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+      color: var(--burga-blue);
+      font-size: 23px;
+      line-height: 1.3;
+    }
+
+    .project-card p {
+      margin: 0 0 17px;
+      color: var(--burga-muted);
+    }
+
+    .project-card a {
+      margin-top: auto;
+      color: var(--burga-red);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .projects-note {
+      max-width: 850px;
+      margin: 28px auto 0;
+      padding: 16px 18px;
+      color: var(--burga-muted);
+      background: #fff;
+      border-left: 4px solid var(--burga-red);
+      border-radius: 7px;
+      font-size: 14px;
+    }
+
+    /* PROCESO */
+
+    .projects-process {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .projects-process article {
+      padding: 24px;
+      border: 1px solid var(--burga-border);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .projects-process span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 12px;
+      color: var(--burga-red);
+      background: #fff0f2;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .projects-process h3 {
+      margin: 0 0 8px;
+      color: var(--burga-blue);
+      font-size: 19px;
+    }
+
+    .projects-process p {
+      margin: 0;
+      color: var(--burga-muted);
+    }
+
+    /* CTA Y PIE */
+
+    .projects-cta {
+      padding: 60px 0;
+      color: #fff;
+      text-align: center;
+      background: var(--burga-blue);
+    }
+
+    .projects-cta h2 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .projects-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+    }
+
+    .projects-footer {
+      padding: 22px 16px;
+      color: #fff;
+      background: #091a30;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .projects-footer p {
+      margin: 0;
+    }
+
+    .projects-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      padding: 13px 18px;
+      color: #fff;
+      background: var(--burga-red);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* TABLETS */
+
+    @media (max-width: 1000px) {
+      .projects-page .header-container {
+        gap: 14px;
+      }
+
+      .projects-page .logo {
+        flex-basis: 185px;
+        max-width: 185px;
+      }
+
+      .projects-page .main-nav {
+        gap: 12px;
+      }
+
+      .projects-page .main-nav a {
+        font-size: 13px;
+      }
+    }
+
+    /* MENÚ MÓVIL */
+
+    @media (max-width: 900px) {
+      .projects-page .header-container {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .projects-page .logo {
+        flex: 0 1 190px;
+        max-width: 190px;
+      }
+
+      .projects-page .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #dce3ec;
+        border-radius: 7px;
+        background: #fff;
+        color: var(--burga-blue);
+        font-size: 27px;
+        cursor: pointer;
+      }
+
+      .projects-page .main-nav {
+        display: none;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-top: 1px solid #e5eaf0;
+        padding: 8px 0;
+      }
+
+      .projects-page .main-nav.is-open {
+        display: flex;
+      }
+
+      .projects-page .main-nav > a,
+      .projects-page .nav-dropdown > .dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 8px;
+      }
+
+      .projects-page .dropdown-menu {
+        display: none;
+        position: static;
+        min-width: 0;
+        max-height: none;
+        overflow: visible;
+        padding: 0 0 0 14px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      .projects-page .nav-dropdown.submenu-open > .dropdown-menu {
+        display: block;
+      }
+
+      .projects-page .btn-whatsapp {
+        padding: 10px 14px;
+      }
+
+      .project-card img {
+        height: 235px;
+      }
+    }
+
+    /* CELULARES */
+
+    @media (max-width: 600px) {
+      .projects-container {
+        width: calc(100% - 32px);
+      }
+
+      .projects-page .site-header {
+        padding: 12px;
+      }
+
+      .projects-page .logo {
+        flex-basis: 145px;
+        max-width: 145px;
+      }
+
+      .projects-page .btn-whatsapp {
+        font-size: 13px;
+        padding: 9px 11px;
+      }
+
+      .projects-hero {
+        padding: 54px 0;
+      }
+
+      .projects-hero h1 {
+        font-size: 34px;
+      }
+
+      .projects-hero p {
+        font-size: 16px;
+      }
+
+      .projects-section {
+        padding: 48px 0;
+      }
+
+      .projects-grid,
+      .projects-process {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card img {
+        height: 235px;
+      }
+
+      .project-card-content {
+        padding: 21px;
+      }
+
+      .projects-heading {
+        margin-bottom: 28px;
+      }
+
+      .projects-cta {
+        padding: 48px 0;
+      }
+
+      .projects-whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="projects-page">
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <a href="index.html" class="logo" aria-label="BURGA - Inicio">
+        <img
+          src="imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="250"
+          height="80">
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal">☰</button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+
+        <div class="nav-dropdown">
+          <a href="index.html#servicios" class="dropdown-trigger">
+            Servicios <span aria-hidden="true">▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="servicios/albanileria.html">Albañilería general</a>
+            <a href="servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="servicios/gasfiteria.html">Gasfitería</a>
+            <a href="servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="servicios/tarrajeo.html">Tarrajeo</a>
+            <a href="servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="servicios/techos-aligerados.html">Techos aligerados</a>
+            <a href="servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="servicios/construccion-de-muros.html">Construcción de muros</a>
+            <a href="servicios/columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+            <a href="servicios/pisos-de-concreto.html">Pisos de concreto</a>
+          </div>
+        </div>
+
+        <a href="proyectos.html" aria-current="page">Proyectos</a>
+        <a href="zonas-de-atencion.html">Zonas de atención</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <a
+        class="btn-whatsapp"
+        href="https://wa.me/51906469942"
+        target="_blank"
+        rel="noopener noreferrer">Cotizar</a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="projects-hero">
+      <div class="projects-container projects-hero-content">
+        <span class="projects-eyebrow">BURGA Construcciones &amp; Acabados</span>
+
+        <h1>Proyectos de construcción y acabados en Lima y Callao</h1>
+
+        <p>
+          Explora nuestras categorías de trabajo y encuentra servicios
+          relacionados con construcción residencial, estructuras,
+          acabados interiores y remodelación.
+        </p>
+
+        <a
+          class="project-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por mi proyecto</a>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE PROYECTOS -->
+    <section class="projects-section">
+      <div class="projects-container">
+
+        <div class="projects-heading">
+          <span class="projects-eyebrow">Galería de categorías</span>
+          <h2>Nuestros proyectos</h2>
+          <p>
+            Conoce las áreas de trabajo de BURGA y revisa los servicios
+            relacionados con cada tipo de proyecto.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <img
+              src="imagenes/proyectos/proyecto-vivienda.webp"
+              alt="Construcción residencial y viviendas"
+              width="700"
+              height="450"
+              loading="lazy">
+
+            <div class="project-card-content">
+              <span class="project-category">Construcción</span>
+              <h3>Construcción residencial</h3>
+              <p>
+                Trabajos relacionados con construcción de viviendas,
+                ampliaciones y albañilería, según las características de cada obra.
+              </p>
+              <a href="servicios/construccion-de-viviendas.html">
+                Ver construcción de viviendas →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="imagenes/proyectos/proyecto-acabados.webp"
+              alt="Acabados interiores en una vivienda"
+              width="700"
+              height="450"
+              loading="lazy">
+
+            <div class="project-card-content">
+              <span class="project-category">Acabados</span>
+              <h3>Acabados interiores</h3>
+              <p>
+                Instalación de pisos, mayólicas y tarrajeo para renovar
+                ambientes interiores y superficies.
+              </p>
+              <a href="servicios/instalacion-de-pisos.html">
+                Ver instalación de pisos →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="imagenes/proyectos/proyecto-estructura.webp"
+              alt="Elementos estructurales de una construcción"
+              width="700"
+              height="450"
+              loading="lazy">
+
+            <div class="project-card-content">
+              <span class="project-category">Obra y estructura</span>
+              <h3>Obras y estructuras</h3>
+              <p>
+                Trabajos de muros, columnas, vigas y techos aligerados,
+                considerando las condiciones técnicas del proyecto.
+              </p>
+              <a href="servicios/columnas-y-vigas.html">
+                Ver columnas y vigas →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="imagenes/proyectos/proyecto-bano.webp"
+              alt="Remodelación de baño y revestimientos"
+              width="700"
+              height="450"
+              loading="lazy">
+
+            <div class="project-card-content">
+              <span class="project-category">Remodelación</span>
+              <h3>Remodelación de baños</h3>
+              <p>
+                Mejoramiento de ambientes mediante renovación de revestimientos,
+                pisos y otros acabados según el alcance acordado.
+              </p>
+              <a href="servicios/remodelacion-de-casas.html">
+                Ver remodelación de casas →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CÓMO EMPEZAR -->
+    <section class="projects-section projects-section-light">
+      <div class="projects-container">
+
+        <div class="projects-heading">
+          <span class="projects-eyebrow">Cómo empezar</span>
+          <h2>¿Tienes una obra en mente?</h2>
+          <p>
+            Comparte algunos datos para que podamos conocer mejor el trabajo
+            que necesitas consultar.
+          </p>
+        </div>
+
+        <div class="projects-process">
+
+          <article>
+            <span>01</span>
+            <h3>Describe el trabajo</h3>
+            <p>
+              Cuéntanos si necesitas construir, ampliar, remodelar o realizar acabados.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Indica la ubicación</h3>
+            <p>
+              Señala el distrito, las medidas aproximadas y las condiciones del espacio.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Consulta la cotización</h3>
+            <p>
+              Coordina los detalles y el alcance del servicio según las características
+              de tu proyecto.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN -->
+    <section class="projects-cta">
+      <div class="projects-container">
+
+        <h2>Conversemos sobre tu próximo proyecto</h2>
+
+        <p>
+          Atendemos consultas sobre construcción, remodelación y acabados
+          en Lima Metropolitana y Callao. Escríbenos para contarnos qué necesitas.
+        </p>
+
+        <a
+          class="project-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20cotizar%20un%20proyecto%20con%20BURGA."
+          target="_blank"
+          rel="noopener noreferrer">Solicitar información por WhatsApp</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="projects-footer">
+    <p>Duo Grafico - todos los derechos reservados</p>
+  </footer>
+
+  <!-- ACCESO RÁPIDO A WHATSAPP -->
+  <a
+    href="https://wa.me/51906469942"
+    class="projects-whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">WhatsApp</a>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

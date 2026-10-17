@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en San Isidro | BURGA</title>
+  <meta name="description" content="Servicios de construcción, remodelación y acabados en San Isidro. En BURGA planificamos tu proyecto con atención personalizada.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/san-isidro.html">
+
+  <meta property="og:title" content="Construcción y Remodelación en San Isidro | BURGA">
+  <meta property="og:description" content="Construcción, remodelación y acabados para viviendas, oficinas y otros espacios en San Isidro.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://construccionesburga.com/zonas/san-isidro.html">
+
+  <style>
+    .isidro-page {
+      --isidro-navy: #10233f;
+      --isidro-red: #e52436;
+      --isidro-white: #ffffff;
+      --isidro-light: #f4f6f9;
+      --isidro-text: #263449;
+      --isidro-muted: #647084;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--isidro-text);
+      line-height: 1.6;
+      background: var(--isidro-white);
+    }
+
+    .isidro-page * {
+      box-sizing: border-box;
+    }
+
+    .isidro-page a {
+      text-decoration: none;
+    }
+
+    .isidro-container {
+      width: min(1140px, 92%);
+      margin: 0 auto;
+    }
+
+    .isidro-header {
+      background: var(--isidro-white);
+      box-shadow: 0 3px 15px rgba(16, 35, 63, .08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .isidro-nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .isidro-logo img {
+      display: block;
+      width: 190px;
+      max-width: 48vw;
+      height: auto;
+    }
+
+    .isidro-menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .isidro-menu a {
+      color: var(--isidro-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .isidro-menu a:hover {
+      color: var(--isidro-red);
+    }
+
+    .isidro-menu .isidro-menu-cotizar {
+      background: var(--isidro-red);
+      color: var(--isidro-white);
+      padding: 11px 22px;
+      border-radius: 5px;
+    }
+
+    .isidro-menu .isidro-menu-cotizar:hover {
+      background: #bd1728;
+      color: var(--isidro-white);
+    }
+
+    .isidro-toggle {
+      display: none;
+      background: var(--isidro-navy);
+      color: var(--isidro-white);
+      border: 0;
+      border-radius: 5px;
+      padding: 9px 12px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .isidro-hero {
+      background: linear-gradient(115deg, rgba(11, 29, 53, .97), rgba(24, 52, 84, .88));
+      color: var(--isidro-white);
+      padding: 94px 0;
+    }
+
+    .isidro-hero-content {
+      max-width: 790px;
+    }
+
+    .isidro-eyebrow {
+      display: inline-block;
+      color: #ffd9de;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .isidro-hero h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.13;
+      margin: 0 0 22px;
+    }
+
+    .isidro-hero p {
+      max-width: 700px;
+      font-size: 17px;
+      color: #edf1f7;
+      margin: 0 0 30px;
+    }
+
+    .isidro-button {
+      display: inline-block;
+      background: var(--isidro-red);
+      color: var(--isidro-white);
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .isidro-button:hover {
+      background: #bd1728;
+      transform: translateY(-2px);
+    }
+
+    .isidro-button-secondary {
+      display: inline-block;
+      color: var(--isidro-white);
+      border: 1px solid rgba(255,255,255,.7);
+      padding: 13px 22px;
+      border-radius: 5px;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+    .isidro-section {
+      padding: 74px 0;
+    }
+
+    .isidro-section-light {
+      background: var(--isidro-light);
+    }
+
+    .isidro-section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .isidro-section-heading h2 {
+      color: var(--isidro-navy);
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .isidro-section-heading p {
+      color: var(--isidro-muted);
+      margin: 0;
+    }
+
+    .isidro-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .isidro-card {
+      background: var(--isidro-white);
+      border: 1px solid #e5e9ef;
+      border-radius: 9px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(16, 35, 63, .045);
+    }
+
+    .isidro-card h3 {
+      color: var(--isidro-navy);
+      font-size: 19px;
+      margin: 0 0 12px;
+    }
+
+    .isidro-card p {
+      color: var(--isidro-muted);
+      font-size: 15px;
+      margin: 0 0 16px;
+    }
+
+    .isidro-card a {
+      color: var(--isidro-red);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .isidro-card a:hover {
+      text-decoration: underline;
+    }
+
+    .isidro-two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .isidro-copy h2 {
+      color: var(--isidro-navy);
+      font-size: clamp(26px, 4vw, 36px);
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .isidro-copy p {
+      color: var(--isidro-muted);
+      margin: 0 0 16px;
+    }
+
+    .isidro-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .isidro-list li {
+      position: relative;
+      padding: 12px 0 12px 30px;
+      border-bottom: 1px solid #e7ebf0;
+      color: var(--isidro-text);
+    }
+
+    .isidro-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 11px;
+      color: var(--isidro-red);
+      font-weight: 800;
+    }
+
+    .isidro-process {
+      counter-reset: isidro-step;
+    }
+
+    .isidro-process .isidro-card {
+      position: relative;
+      padding-top: 62px;
+    }
+
+    .isidro-process .isidro-card::before {
+      counter-increment: isidro-step;
+      content: counter(isidro-step, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 26px;
+      color: var(--isidro-red);
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .isidro-faq {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .isidro-faq details {
+      background: var(--isidro-white);
+      border: 1px solid #e1e6ed;
+      border-radius: 7px;
+      margin-bottom: 13px;
+      padding: 18px 21px;
+    }
+
+    .isidro-faq summary {
+      color: var(--isidro-navy);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .isidro-faq details p {
+      color: var(--isidro-muted);
+      margin: 12px 0 0;
+    }
+
+    .isidro-cta {
+      background: var(--isidro-navy);
+      color: var(--isidro-white);
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .isidro-cta h2 {
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .isidro-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e1e8f1;
+    }
+
+    .isidro-footer {
+      background: #0a172a;
+      color: #d5dce7;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .isidro-footer p {
+      margin: 0;
+    }
+
+    .isidro-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 900;
+      background: #20b85a;
+      color: white;
+      padding: 13px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0,0,0,.2);
+    }
+
+    .isidro-whatsapp-float:hover {
+      background: #159447;
+    }
+
+    @media (max-width: 980px) {
+      .isidro-menu {
+        gap: 13px;
+      }
+
+      .isidro-menu a {
+        font-size: 13px;
+      }
+
+      .isidro-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .isidro-nav {
+        min-height: 72px;
+      }
+
+      .isidro-toggle {
+        display: block;
+      }
+
+      .isidro-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 18px 4%;
+        background: var(--isidro-white);
+        box-shadow: 0 12px 16px rgba(16, 35, 63, .1);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .isidro-menu.isidro-open {
+        display: flex;
+      }
+
+      .isidro-menu a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 15px;
+      }
+
+      .isidro-menu .isidro-menu-cotizar {
+        text-align: center;
+        margin-top: 8px;
+        padding: 12px;
+      }
+
+      .isidro-hero {
+        padding: 68px 0;
+      }
+
+      .isidro-hero p {
+        font-size: 16px;
+      }
+
+      .isidro-button-secondary {
+        margin: 12px 0 0;
+      }
+
+      .isidro-section {
+        padding: 54px 0;
+      }
+
+      .isidro-grid,
+      .isidro-two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .isidro-card {
+        padding: 23px;
+      }
+
+      .isidro-process .isidro-card {
+        padding-top: 60px;
+      }
+
+      .isidro-whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="isidro-page">
+    <header class="isidro-header">
+      <div class="isidro-container isidro-nav">
+        <a class="isidro-logo" href="../index.html" aria-label="BURGA, inicio">
+          <img src="../imagenes/logo/logo-burga.webp" alt="Logo de BURGA Construcciones y Acabados">
+        </a>
+
+        <button class="isidro-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav class="isidro-menu" aria-label="Menú principal">
+          <a href="../index.html">Inicio</a>
+          <a href="../nosotros.html">Nosotros</a>
+          <a href="../proyectos.html">Proyectos</a>
+          <a href="../zonas-de-atencion.html">Zonas de atención</a>
+          <a href="../contacto.html">Contacto</a>
+          <a class="isidro-menu-cotizar"
+             href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20San%20Isidro."
+             target="_blank" rel="noopener noreferrer">Cotizar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="isidro-hero">
+        <div class="isidro-container isidro-hero-content">
+          <span class="isidro-eyebrow">BURGA Construcciones &amp; Acabados</span>
+          <h1>Construcción y remodelación en San Isidro</h1>
+          <p>
+            ¿Quieres renovar tu vivienda, modernizar una oficina o mejorar los acabados
+            de tu inmueble? En BURGA te ayudamos a organizar tu proyecto, definir sus
+            prioridades y evaluar las soluciones más adecuadas para tu espacio.
+          </p>
+          <a class="isidro-button"
+             href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20San%20Isidro."
+             target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+          <a class="isidro-button-secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </section>
+
+      <section class="isidro-section">
+        <div class="isidro-container">
+          <div class="isidro-section-heading">
+            <h2>Servicios de construcción y acabados en San Isidro</h2>
+            <p>
+              Soluciones para viviendas, departamentos, oficinas y otros espacios,
+              con una planificación acorde a las características de cada proyecto.
+            </p>
+          </div>
+
+          <div class="isidro-grid" id="servicios">
+            <article class="isidro-card">
+              <h3>Construcción y ampliación</h3>
+              <p>Planificación de nuevos ambientes y ampliaciones, según la evaluación del inmueble y las condiciones técnicas.</p>
+              <a href="../servicios/construccion.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Remodelación de viviendas</h3>
+              <p>Renovación de ambientes para mejorar su distribución, funcionalidad y apariencia.</p>
+              <a href="../servicios/remodelacion.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Remodelación de oficinas</h3>
+              <p>Mejoras en espacios de trabajo, considerando circulación, distribución y necesidades de uso.</p>
+              <a href="../servicios/remodelacion.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Acabados y pintura</h3>
+              <p>Renovación de superficies y acabados interiores para conseguir un resultado uniforme y ordenado.</p>
+              <a href="../servicios/acabados.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Instalación de pisos</h3>
+              <p>Evaluación e instalación de pisos de acuerdo con el ambiente, el uso y el acabado elegido.</p>
+              <a href="../servicios/instalacion-de-pisos.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Remodelación de baños</h3>
+              <p>Renovación de revestimientos, accesorios y distribución, según las condiciones del espacio.</p>
+              <a href="../servicios/remodelacion-de-banos.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Remodelación de cocinas</h3>
+              <p>Mejoras de distribución, revestimientos y acabados para aprovechar mejor cada área.</p>
+              <a href="../servicios/remodelacion-de-cocinas.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Instalaciones eléctricas</h3>
+              <p>Trabajos y mejoras eléctricas sujetos a revisión técnica y a las condiciones de la instalación existente.</p>
+              <a href="../servicios/instalaciones-electricas.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Gasfitería</h3>
+              <p>Revisión y renovación de instalaciones sanitarias, conexiones y puntos de agua según el proyecto.</p>
+              <a href="../servicios/gasfiteria.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Drywall</h3>
+              <p>Soluciones para divisiones interiores, cielos rasos y otros elementos, previa evaluación del ambiente.</p>
+              <a href="../servicios/drywall.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Carpintería y puertas</h3>
+              <p>Mejoras y acabados en elementos de carpintería, de acuerdo con las medidas y necesidades del inmueble.</p>
+              <a href="../servicios/carpinteria.html">Conocer servicio</a>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Mantenimiento de inmuebles</h3>
+              <p>Trabajos puntuales para conservar y mejorar diferentes áreas de viviendas y espacios comerciales.</p>
+              <a href="../servicios/mantenimiento.html">Conocer servicio</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="isidro-section isidro-section-light">
+        <div class="isidro-container isidro-two-columns">
+          <div class="isidro-copy">
+            <h2>Un proyecto organizado desde el inicio</h2>
+            <p>
+              Cada inmueble tiene características particulares. Por eso, antes de
+              iniciar una obra o remodelación, conviene identificar el alcance de los
+              trabajos, los materiales necesarios y las condiciones del espacio.
+            </p>
+            <p>
+              En San Isidro, podemos conversar sobre las necesidades de tu vivienda,
+              departamento, oficina o local y coordinar una evaluación del proyecto.
+            </p>
+            <a class="isidro-button"
+               href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20deseo%20informaci%C3%B3n%20sobre%20una%20remodelaci%C3%B3n%20en%20San%20Isidro."
+               target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+          </div>
+
+          <div class="isidro-card">
+            <h3>¿Qué podemos revisar?</h3>
+            <ul class="isidro-list">
+              <li>El tipo de inmueble y sus características.</li>
+              <li>Los ambientes que deseas construir o renovar.</li>
+              <li>Los acabados y materiales que estás considerando.</li>
+              <li>Las instalaciones que podrían requerir mejoras.</li>
+              <li>El alcance del trabajo y los pasos para cotizar.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="isidro-section">
+        <div class="isidro-container">
+          <div class="isidro-section-heading">
+            <h2>¿Cómo empezamos tu proyecto?</h2>
+            <p>Un proceso de coordinación para conocer lo que necesitas antes de definir el trabajo.</p>
+          </div>
+
+          <div class="isidro-grid isidro-process">
+            <article class="isidro-card">
+              <h3>Cuéntanos tu idea</h3>
+              <p>Escríbenos por WhatsApp y explícanos qué ambiente deseas construir, mejorar o remodelar.</p>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Evaluamos el alcance</h3>
+              <p>Revisamos la información disponible y coordinamos los siguientes pasos para conocer el proyecto.</p>
+            </article>
+
+            <article class="isidro-card">
+              <h3>Coordinamos la cotización</h3>
+              <p>Definimos los trabajos por considerar y la información necesaria para preparar una propuesta.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="isidro-section isidro-section-light">
+        <div class="isidro-container">
+          <div class="isidro-section-heading">
+            <h2>Preguntas frecuentes</h2>
+            <p>Información inicial para quienes buscan servicios de construcción en San Isidro.</p>
+          </div>
+
+          <div class="isidro-faq">
+            <details>
+              <summary>¿Qué servicios de remodelación ofrecen en San Isidro?</summary>
+              <p>Podemos revisar proyectos de remodelación de viviendas, departamentos y oficinas, además de acabados, pisos, baños, cocinas e instalaciones. El alcance se confirma según cada caso.</p>
+            </details>
+
+            <details>
+              <summary>¿Puedo solicitar una cotización por WhatsApp?</summary>
+              <p>Sí. Escríbenos indicando el distrito, el tipo de inmueble y los trabajos que deseas realizar. Si tienes fotos o medidas del espacio, puedes compartirlas para una primera orientación.</p>
+            </details>
+
+            <details>
+              <summary>¿El presupuesto depende del tamaño del proyecto?</summary>
+              <p>El presupuesto depende de factores como el área, el estado actual del inmueble, los materiales, los acabados y la complejidad de los trabajos. Es necesario revisar esos aspectos para estimarlo.</p>
+            </details>
+
+            <details>
+              <summary>¿Pueden evaluar instalaciones eléctricas o sanitarias?</summary>
+              <p>Podemos coordinar la revisión del trabajo requerido. Las instalaciones deben evaluarse técnicamente antes de definir las intervenciones necesarias.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="isidro-cta">
+        <div class="isidro-container">
+          <h2>¿Tienes un proyecto en San Isidro?</h2>
+          <p>
+            Cuéntanos qué necesitas mejorar o construir. Conversemos sobre tu proyecto
+            y coordinemos los siguientes pasos.
+          </p>
+          <a class="isidro-button"
+             href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20San%20Isidro."
+             target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="isidro-footer">
+      <div class="isidro-container">
+        <p>Duo Grafico - todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <a class="isidro-whatsapp-float"
+       href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20San%20Isidro."
+       target="_blank" rel="noopener noreferrer" aria-label="Escribir a BURGA por WhatsApp">
+      WhatsApp
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      const page = document.querySelector(".isidro-page");
+      if (!page) return;
+
+      const toggle = page.querySelector(".isidro-toggle");
+      const menu = page.querySelector(".isidro-menu");
+
+      if (toggle && menu) {
+        toggle.addEventListener("click", function () {
+          const isOpen = menu.classList.toggle("isidro-open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+          toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+          toggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        menu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            menu.classList.remove("isidro-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Abrir menú");
+            toggle.textContent = "☰";
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

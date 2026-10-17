@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nosotros | BURGA Construcciones y Acabados</title>
+  
+<link rel="icon" type="image/png" href="imagenes/logo/favicon.png">
+
+  <meta name="description" content="Conoce a BURGA Construcciones y Acabados. Servicios de construcción, remodelación y acabados para viviendas y negocios en Lima y Callao.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/nosotros.html">
+
+
+  <style>
+    :root {
+      --burga-blue: #102746;
+      --burga-blue-light: #1d4268;
+      --burga-red: #e51e3d;
+      --burga-text: #263449;
+      --burga-muted: #5b6677;
+      --burga-light: #f5f7fa;
+      --burga-border: #e4e9f0;
+      --burga-white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body.about-page {
+      margin: 0;
+      color: var(--burga-text);
+      line-height: 1.7;
+      background: var(--burga-white);
+    }
+
+    .about-page img {
+      max-width: 100%;
+    }
+
+    .about-container {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    /* ENCABEZADO */
+
+    .about-page .site-header {
+      background: #fff;
+      width: 100%;
+      padding: 12px 20px;
+      position: relative;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(16, 39, 70, 0.06);
+    }
+
+    .about-page .header-container {
+      width: min(1120px, 100%);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .about-page .logo {
+      display: block;
+      flex: 0 0 230px;
+      max-width: 230px;
+      line-height: 0;
+    }
+
+    .about-page .logo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .about-page .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .about-page .main-nav a {
+      color: var(--burga-blue);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .about-page .main-nav a:hover,
+    .about-page .main-nav a[aria-current="page"] {
+      color: var(--burga-red);
+    }
+
+    .about-page .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: var(--burga-red);
+      color: #fff;
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 7px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.2s ease;
+    }
+
+    .about-page .btn-whatsapp:hover,
+    .about-page .about-button:hover {
+      background: #bd1731;
+    }
+
+    .about-page .menu-toggle {
+      display: none;
+    }
+
+    .about-page .nav-dropdown {
+      position: relative;
+    }
+
+    .about-page .dropdown-trigger {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .about-page .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 245px;
+      max-height: 70vh;
+      overflow-y: auto;
+      background: #fff;
+      padding: 8px 0;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      z-index: 200;
+    }
+
+    .about-page .dropdown-menu a {
+      display: block;
+      padding: 9px 15px;
+    }
+
+    .about-page .dropdown-menu a:hover {
+      background: var(--burga-light);
+    }
+
+    @media (min-width: 901px) {
+      .about-page .nav-dropdown:hover > .dropdown-menu,
+      .about-page .nav-dropdown:focus-within > .dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* PORTADA */
+
+    .about-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 85px 0;
+      color: #fff;
+      background: linear-gradient(120deg, #102746, #1d4268);
+    }
+
+    .about-hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .about-eyebrow {
+      display: inline-block;
+      color: #ff8291;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .about-hero h1 {
+      margin: 15px 0 20px;
+      color: #fff;
+      font-size: clamp(34px, 4vw, 49px);
+      line-height: 1.15;
+    }
+
+    .about-hero p {
+      max-width: 580px;
+      margin: 0 0 25px;
+      color: #edf3fa;
+      font-size: 17px;
+    }
+
+    .about-hero-image {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    }
+
+    .about-button {
+      display: inline-block;
+      padding: 13px 22px;
+      background: var(--burga-red);
+      color: #fff;
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .about-button-outline {
+      display: inline-block;
+      padding: 12px 21px;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* SECCIONES */
+
+    .about-section {
+      padding: 70px 0;
+    }
+
+    .about-section-light {
+      background: var(--burga-light);
+    }
+
+    .about-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .about-heading h2,
+    .about-copy h2 {
+      color: var(--burga-blue);
+      font-size: clamp(26px, 3vw, 35px);
+      line-height: 1.25;
+      margin: 0 0 16px;
+    }
+
+    .about-heading p,
+    .about-copy p {
+      color: var(--burga-muted);
+      margin-top: 0;
+    }
+
+    .about-two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      gap: 45px;
+    }
+
+    .about-copy p {
+      margin-bottom: 17px;
+    }
+
+    .about-highlight {
+      padding: 28px;
+      background: #fff;
+      border: 1px solid var(--burga-border);
+      border-left: 4px solid var(--burga-red);
+      border-radius: 12px;
+    }
+
+    .about-highlight h3 {
+      color: var(--burga-blue);
+      margin: 0 0 12px;
+      font-size: 21px;
+    }
+
+    .about-highlight p {
+      margin: 0;
+      color: var(--burga-muted);
+    }
+
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .about-card {
+      height: 100%;
+      padding: 27px;
+      background: #fff;
+      border: 1px solid var(--burga-border);
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(16, 39, 70, 0.08);
+    }
+
+    .about-card-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 43px;
+      height: 43px;
+      margin-bottom: 14px;
+      border-radius: 9px;
+      color: #d71938;
+      background: #fff0f2;
+      font-weight: 800;
+    }
+
+    .about-card h3 {
+      margin: 0 0 10px;
+      color: var(--burga-blue);
+      font-size: 20px;
+    }
+
+    .about-card p {
+      margin: 0;
+      color: var(--burga-muted);
+    }
+
+    /* PROCESO */
+
+    .about-process {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .about-process-item {
+      padding: 22px 18px;
+      border-top: 3px solid var(--burga-red);
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .about-process-item span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--burga-red);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .about-process-item h3 {
+      color: var(--burga-blue);
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+
+    .about-process-item p {
+      margin: 0;
+      color: var(--burga-muted);
+      font-size: 15px;
+    }
+
+    /* SERVICIOS RELACIONADOS */
+
+    .about-service-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .about-service-links a {
+      padding: 10px 15px;
+      color: var(--burga-blue);
+      text-decoration: none;
+      border: 1px solid var(--burga-border);
+      border-radius: 7px;
+      background: #fff;
+    }
+
+    .about-service-links a:hover {
+      border-color: var(--burga-red);
+      color: var(--burga-red);
+    }
+
+    /* LLAMADA FINAL */
+
+    .about-cta {
+      padding: 60px 0;
+      text-align: center;
+      color: #fff;
+      background: var(--burga-blue);
+    }
+
+    .about-cta h2 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .about-cta p {
+      max-width: 690px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+    }
+
+    .about-cta .about-button {
+      margin: 5px;
+    }
+
+    .about-footer {
+      padding: 22px 16px;
+      color: #fff;
+      background: #091a30;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .about-footer p {
+      margin: 0;
+    }
+
+    .about-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      padding: 13px 18px;
+      color: #fff;
+      background: var(--burga-red);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+      .about-page .header-container {
+        gap: 14px;
+      }
+
+      .about-page .logo {
+        flex-basis: 185px;
+        max-width: 185px;
+      }
+
+      .about-page .main-nav {
+        gap: 12px;
+      }
+
+      .about-page .main-nav a {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .about-page .header-container {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .about-page .logo {
+        flex: 0 1 190px;
+        max-width: 190px;
+      }
+
+      .about-page .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #dce3ec;
+        border-radius: 7px;
+        background: #fff;
+        color: var(--burga-blue);
+        font-size: 27px;
+        cursor: pointer;
+      }
+
+      .about-page .main-nav {
+        display: none;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-top: 1px solid #e5eaf0;
+        padding: 8px 0;
+      }
+
+      .about-page .main-nav.is-open {
+        display: flex;
+      }
+
+      .about-page .main-nav > a,
+      .about-page .nav-dropdown > .dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 8px;
+      }
+
+      .about-page .dropdown-menu {
+        display: none;
+        position: static;
+        min-width: 0;
+        max-height: none;
+        overflow: visible;
+        padding: 0 0 0 14px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      .about-page .nav-dropdown.submenu-open > .dropdown-menu {
+        display: block;
+      }
+
+      .about-page .btn-whatsapp {
+        padding: 10px 14px;
+      }
+
+      .about-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .about-hero-image {
+        height: 330px;
+      }
+
+      .about-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .about-process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        width: min(100% - 32px, 1120px);
+      }
+
+      .about-page .site-header {
+        padding: 12px;
+      }
+
+      .about-page .logo {
+        flex-basis: 145px;
+        max-width: 145px;
+      }
+
+      .about-page .btn-whatsapp {
+        font-size: 13px;
+        padding: 9px 11px;
+      }
+
+      .about-hero {
+        padding: 55px 0;
+      }
+
+      .about-hero h1 {
+        font-size: 34px;
+      }
+
+      .about-hero p {
+        font-size: 16px;
+      }
+
+      .about-hero-image {
+        height: 245px;
+      }
+
+      .about-section {
+        padding: 48px 0;
+      }
+
+      .about-two-columns,
+      .about-cards,
+      .about-process {
+        grid-template-columns: 1fr;
+      }
+
+      .about-two-columns {
+        gap: 24px;
+      }
+
+      .about-heading {
+        margin-bottom: 28px;
+      }
+
+      .about-card {
+        padding: 23px;
+      }
+
+      .about-cta {
+        padding: 48px 0;
+      }
+
+      .about-whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .about-card {
+        transition: none;
+      }
+    }
+
+    /* AJUSTE DE ANCHO: evita conflictos con estilos globales */
+    body.about-page {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: none;
+      overflow-x: hidden;
+    }
+
+    .about-page main,
+    .about-page main > section {
+      display: block;
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+    }
+
+    .about-page .about-container {
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      max-width: 1120px;
+      min-width: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about-page .about-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      width: min(1120px, calc(100% - 40px));
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about-page .about-heading {
+      display: block;
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .about-page .about-cards {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .about-page .about-card {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      padding: 27px;
+      overflow-wrap: break-word;
+    }
+
+    .about-page .about-process {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .about-page .about-two-columns {
+      display: grid;
+      width: min(1120px, calc(100% - 40px));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 45px;
+    }
+
+    .about-page .about-service-links {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .about-page .about-hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .about-page .about-cards,
+      .about-page .about-process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-page .about-container,
+      .about-page .about-two-columns,
+      .about-page .about-hero-grid {
+        width: calc(100% - 32px);
+      }
+
+      .about-page .about-cards,
+      .about-page .about-process,
+      .about-page .about-two-columns {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body class="about-page">
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <a href="index.html" class="logo" aria-label="BURGA - Inicio">
+        <img
+          src="imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="250"
+          height="80">
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal">☰</button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html" aria-current="page">Nosotros</a>
+
+        <div class="nav-dropdown">
+          <a href="index.html#servicios" class="dropdown-trigger">
+            Servicios <span aria-hidden="true">▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="servicios/albanileria.html">Albañilería general</a>
+            <a href="servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="servicios/gasfiteria.html">Gasfitería</a>
+            <a href="servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="servicios/tarrajeo.html">Tarrajeo</a>
+            <a href="servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="servicios/techos-aligerados.html">Techos aligerados</a>
+            <a href="servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="servicios/construccion-de-muros.html">Construcción de muros</a>
+            <a href="servicios/columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+            <a href="servicios/pisos-de-concreto.html">Pisos de concreto</a>
+          </div>
+        </div>
+
+        <a href="proyectos.html">Proyectos</a>
+        <a href="zonas-de-atencion.html">Zonas de atención</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <a
+        class="btn-whatsapp"
+        href="https://wa.me/51906469942"
+        target="_blank"
+        rel="noopener noreferrer">Cotizar</a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="about-hero">
+      <div class="about-container about-hero-grid">
+
+        <div>
+          <span class="about-eyebrow">BURGA Construcciones &amp; Acabados</span>
+
+          <h1>Construcción y acabados con atención a cada detalle</h1>
+
+          <p>
+            Somos una propuesta orientada a brindar soluciones de construcción,
+            remodelación y acabados para viviendas y negocios. En BURGA buscamos
+            entender las necesidades de cada proyecto para ayudarte a planificar
+            el trabajo que necesitas.
+          </p>
+
+          <a class="about-button"
+             href="https://wa.me/51906469942?text=Hola%2C%20deseo%20conocer%20los%20servicios%20de%20BURGA."
+             target="_blank"
+             rel="noopener noreferrer">Conversemos sobre tu proyecto</a>
+        </div>
+
+        <div>
+          <img
+            class="about-hero-image"
+            src="imagenes/inicio/portada-vivienda.webp"
+            alt="Vivienda como referencia para proyectos de construcción en Lima y Callao"
+            width="700"
+            height="500"
+            fetchpriority="high">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRESENTACIÓN -->
+    <section class="about-section">
+      <div class="about-container about-two-columns">
+
+        <div class="about-copy">
+          <span class="about-eyebrow">Conócenos</span>
+          <h2>¿Quiénes somos?</h2>
+
+          <p>
+            BURGA Construcciones &amp; Acabados está orientada a atender
+            proyectos de construcción, mejoramiento de espacios y acabados
+            para viviendas y negocios en Lima Metropolitana y Callao.
+          </p>
+
+          <p>
+            Cada obra tiene características propias. Por eso, consideramos
+            importante conocer el espacio, las necesidades del cliente y el
+            alcance del trabajo antes de definir las actividades que se deben
+            realizar.
+          </p>
+
+          <p>
+            Queremos facilitar la comunicación desde la primera consulta,
+            brindando información clara para que puedas evaluar las opciones
+            disponibles para tu proyecto.
+          </p>
+        </div>
+
+        <div class="about-highlight">
+          <h3>Nuestro enfoque de trabajo</h3>
+          <p>
+            Escuchar lo que necesitas, revisar las características del proyecto
+            y coordinar el alcance de los trabajos son pasos importantes para
+            organizar una obra y definir sus requerimientos.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPROMISO -->
+    <section class="about-section about-section-light">
+      <div class="about-container">
+
+        <div class="about-heading">
+          <span class="about-eyebrow">Nuestra forma de trabajar</span>
+          <h2>¿Qué buscamos en cada proyecto?</h2>
+          <p>
+            Una buena comunicación y una planificación adecuada ayudan a
+            establecer expectativas claras desde el inicio.
+          </p>
+        </div>
+
+        <div class="about-cards">
+
+          <article class="about-card">
+            <span class="about-card-number">01</span>
+            <h3>Atención personalizada</h3>
+            <p>
+              Buscamos conocer tus necesidades, el tipo de espacio y los
+              objetivos que deseas alcanzar antes de orientar el trabajo.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-card-number">02</span>
+            <h3>Planificación</h3>
+            <p>
+              Las dimensiones, las condiciones existentes y el alcance de
+              la obra son aspectos que deben evaluarse para organizar cada proyecto.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-card-number">03</span>
+            <h3>Comunicación clara</h3>
+            <p>
+              Procuramos que la información sobre los trabajos, las necesidades
+              y los siguientes pasos sea comprensible para el cliente.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-card-number">04</span>
+            <h3>Orientación técnica</h3>
+            <p>
+              Según el tipo de obra, es importante considerar las condiciones
+              del inmueble y las especificaciones técnicas correspondientes.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-card-number">05</span>
+            <h3>Soluciones para cada espacio</h3>
+            <p>
+              Evaluamos las características de viviendas, patios, cocheras,
+              ambientes interiores y otras áreas según el servicio solicitado.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-card-number">06</span>
+            <h3>Coordinación del proyecto</h3>
+            <p>
+              Definir los trabajos requeridos y las condiciones de ejecución
+              permite coordinar mejor las actividades de cada obra.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="about-section">
+      <div class="about-container">
+
+        <div class="about-heading">
+          <span class="about-eyebrow">Así puedes comenzar</span>
+          <h2>¿Cómo consultar por tu proyecto?</h2>
+          <p>
+            Puedes iniciar tu consulta con información básica sobre el espacio
+            y el trabajo que necesitas realizar.
+          </p>
+        </div>
+
+        <div class="about-process">
+
+          <article class="about-process-item">
+            <span>PASO 01</span>
+            <h3>Cuéntanos tu idea</h3>
+            <p>Indícanos qué necesitas construir, reparar, ampliar o remodelar.</p>
+          </article>
+
+          <article class="about-process-item">
+            <span>PASO 02</span>
+            <h3>Comparte los detalles</h3>
+            <p>Señala el distrito, las medidas aproximadas y las condiciones del espacio.</p>
+          </article>
+
+          <article class="about-process-item">
+            <span>PASO 03</span>
+            <h3>Revisemos el alcance</h3>
+            <p>Conversa sobre los trabajos requeridos y las características de tu proyecto.</p>
+          </article>
+
+          <article class="about-process-item">
+            <span>PASO 04</span>
+            <h3>Coordina una cotización</h3>
+            <p>Consulta las condiciones y los siguientes pasos según el trabajo solicitado.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="about-section about-section-light">
+      <div class="about-container">
+
+        <div class="about-heading">
+          <span class="about-eyebrow">Nuestros servicios</span>
+          <h2>Soluciones de construcción y acabados</h2>
+          <p>
+            Conoce las páginas de nuestros servicios y encuentra información
+            relacionada con el trabajo que necesitas para tu vivienda o negocio.
+          </p>
+        </div>
+
+        <div class="about-service-links">
+          <a href="servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+          <a href="servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+          <a href="servicios/albanileria.html">Albañilería</a>
+          <a href="servicios/gasfiteria.html">Gasfitería</a>
+          <a href="servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+          <a href="servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+          <a href="servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+          <a href="servicios/techos-aligerados.html">Techos aligerados</a>
+          <a href="servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+          <a href="servicios/construccion-de-muros.html">Construcción de muros</a>
+          <a href="servicios/columnas-y-vigas.html">Columnas y vigas</a>
+          <a href="servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+          <a href="servicios/pisos-de-concreto.html">Pisos de concreto</a>
+          <a href="servicios/tarrajeo.html">Tarrajeo</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COBERTURA -->
+    <section class="about-section">
+      <div class="about-container about-two-columns">
+
+        <div class="about-copy">
+          <span class="about-eyebrow">Nuestra cobertura</span>
+          <h2>Atención en Lima Metropolitana y Callao</h2>
+
+          <p>
+            Si buscas servicios de construcción o acabados, puedes consultar
+            por la atención en tu distrito y explicar las características
+            de la obra que deseas realizar.
+          </p>
+
+          <p>
+            La disponibilidad y el alcance de cada trabajo deben confirmarse
+            según la ubicación, las condiciones del proyecto y el servicio solicitado.
+          </p>
+
+          <a class="about-button" href="zonas-de-atencion.html">
+            Ver zonas de atención
+          </a>
+        </div>
+
+        <div class="about-highlight">
+          <h3>¿Tienes un proyecto en mente?</h3>
+          <p>
+            Para iniciar tu consulta, comparte la ubicación, el área aproximada
+            y una breve descripción del trabajo. Si tienes fotografías del
+            espacio, también pueden ayudar a explicar lo que necesitas.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="about-cta">
+      <div class="about-container">
+
+        <h2>Cuéntanos qué necesitas construir o renovar</h2>
+
+        <p>
+          Escríbenos por WhatsApp para consultar sobre nuestros servicios
+          de construcción, remodelación y acabados en Lima Metropolitana y Callao.
+        </p>
+
+        <a
+          class="about-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n%20o%20acabados."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por WhatsApp</a>
+
+        <a class="about-button-outline" href="proyectos.html">
+          Conocer proyectos
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="about-footer">
+    <p>Duo Grafico - todos los derechos reservados</p>
+  </footer>
+
+  <!-- ACCESO RÁPIDO A WHATSAPP -->
+  <a
+    href="https://wa.me/51906469942"
+    class="about-whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">WhatsApp</a>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

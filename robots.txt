@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Cuando publiques la web, añade aquí la URL absoluta del sitemap:
+# Sitemap: https://www.TU-DOMINIO.pe/sitemap.xml

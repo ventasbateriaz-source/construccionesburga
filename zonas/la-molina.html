@@ -1,0 +1,659 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en La Molina | BURGA</title>
+  <meta name="description" content="Construcción, remodelación y acabados en La Molina. Coordina con BURGA tu proyecto para casas, departamentos y oficinas.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/la-molina.html">
+
+  <meta property="og:title" content="Construcción y Remodelación en La Molina | BURGA">
+  <meta property="og:description" content="Servicios de construcción, remodelación y acabados para viviendas, departamentos y oficinas en La Molina.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://construccionesburga.com/zonas/la-molina.html">
+
+  <style>
+    .molina-page {
+      --molina-navy: #10233f;
+      --molina-red: #e52436;
+      --molina-white: #ffffff;
+      --molina-light: #f4f6f9;
+      --molina-text: #263449;
+      --molina-muted: #647084;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--molina-text);
+      background: var(--molina-white);
+    }
+
+    .molina-page * { box-sizing: border-box; }
+    .molina-page a { text-decoration: none; }
+
+    .molina-container {
+      width: min(1140px, 92%);
+      margin: 0 auto;
+    }
+
+    .molina-header {
+      background: var(--molina-white);
+      box-shadow: 0 3px 15px rgba(16,35,63,.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .molina-nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .molina-logo img {
+      display: block;
+      width: 190px;
+      max-width: 48vw;
+      height: auto;
+    }
+
+    .molina-menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .molina-menu a {
+      color: var(--molina-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .molina-menu a:hover { color: var(--molina-red); }
+
+    .molina-menu .molina-menu-cotizar {
+      background: var(--molina-red);
+      color: var(--molina-white);
+      padding: 11px 22px;
+      border-radius: 5px;
+    }
+
+    .molina-menu .molina-menu-cotizar:hover {
+      background: #bd1728;
+      color: var(--molina-white);
+    }
+
+    .molina-toggle {
+      display: none;
+      background: var(--molina-navy);
+      color: var(--molina-white);
+      border: 0;
+      border-radius: 5px;
+      padding: 9px 12px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .molina-hero {
+      background: linear-gradient(115deg, rgba(11,29,53,.97), rgba(24,52,84,.88));
+      color: var(--molina-white);
+      padding: 94px 0;
+    }
+
+    .molina-hero-content { max-width: 790px; }
+
+    .molina-eyebrow {
+      display: inline-block;
+      color: #ffd9de;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .molina-hero h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.13;
+      margin: 0 0 22px;
+    }
+
+    .molina-hero p {
+      max-width: 700px;
+      font-size: 17px;
+      color: #edf1f7;
+      margin: 0 0 30px;
+    }
+
+    .molina-button {
+      display: inline-block;
+      background: var(--molina-red);
+      color: var(--molina-white);
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .molina-button:hover {
+      background: #bd1728;
+      transform: translateY(-2px);
+    }
+
+    .molina-button-secondary {
+      display: inline-block;
+      color: var(--molina-white);
+      border: 1px solid rgba(255,255,255,.7);
+      padding: 13px 22px;
+      border-radius: 5px;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+    .molina-section { padding: 74px 0; }
+    .molina-section-light { background: var(--molina-light); }
+
+    .molina-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .molina-heading h2 {
+      color: var(--molina-navy);
+      font-size: clamp(26px,4vw,38px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .molina-heading p {
+      color: var(--molina-muted);
+      margin: 0;
+    }
+
+    .molina-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 22px;
+    }
+
+    .molina-card {
+      background: var(--molina-white);
+      border: 1px solid #e5e9ef;
+      border-radius: 9px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(16,35,63,.045);
+    }
+
+    .molina-card h3 {
+      color: var(--molina-navy);
+      font-size: 19px;
+      margin: 0 0 12px;
+    }
+
+    .molina-card p {
+      color: var(--molina-muted);
+      font-size: 15px;
+      margin: 0 0 16px;
+    }
+
+    .molina-card a {
+      color: var(--molina-red);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .molina-card a:hover { text-decoration: underline; }
+
+    .molina-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .molina-copy h2 {
+      color: var(--molina-navy);
+      font-size: clamp(26px,4vw,36px);
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .molina-copy p {
+      color: var(--molina-muted);
+      margin: 0 0 16px;
+    }
+
+    .molina-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .molina-list li {
+      position: relative;
+      padding: 12px 0 12px 30px;
+      border-bottom: 1px solid #e7ebf0;
+    }
+
+    .molina-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 11px;
+      color: var(--molina-red);
+      font-weight: 800;
+    }
+
+    .molina-process { counter-reset: molina-step; }
+
+    .molina-process .molina-card {
+      position: relative;
+      padding-top: 62px;
+    }
+
+    .molina-process .molina-card::before {
+      counter-increment: molina-step;
+      content: counter(molina-step, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 26px;
+      color: var(--molina-red);
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .molina-faq { max-width: 850px; margin: 0 auto; }
+
+    .molina-faq details {
+      background: var(--molina-white);
+      border: 1px solid #e1e6ed;
+      border-radius: 7px;
+      margin-bottom: 13px;
+      padding: 18px 21px;
+    }
+
+    .molina-faq summary {
+      color: var(--molina-navy);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .molina-faq details p {
+      color: var(--molina-muted);
+      margin: 12px 0 0;
+    }
+
+    .molina-cta {
+      background: var(--molina-navy);
+      color: var(--molina-white);
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .molina-cta h2 {
+      font-size: clamp(27px,4vw,39px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .molina-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e1e8f1;
+    }
+
+    .molina-footer {
+      background: #0a172a;
+      color: #d5dce7;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .molina-footer p { margin: 0; }
+
+    .molina-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 900;
+      background: #20b85a;
+      color: white;
+      padding: 13px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0,0,0,.2);
+    }
+
+    .molina-whatsapp:hover { background: #159447; }
+
+    @media (max-width: 980px) {
+      .molina-menu { gap: 13px; }
+      .molina-menu a { font-size: 13px; }
+      .molina-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .molina-nav { min-height: 72px; }
+      .molina-toggle { display: block; }
+
+      .molina-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 18px 4%;
+        background: var(--molina-white);
+        box-shadow: 0 12px 16px rgba(16,35,63,.1);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .molina-menu.molina-open { display: flex; }
+
+      .molina-menu a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 15px;
+      }
+
+      .molina-menu .molina-menu-cotizar {
+        text-align: center;
+        margin-top: 8px;
+        padding: 12px;
+      }
+
+      .molina-hero { padding: 68px 0; }
+      .molina-hero p { font-size: 16px; }
+      .molina-button-secondary { margin: 12px 0 0; }
+      .molina-section { padding: 54px 0; }
+      .molina-grid, .molina-columns { grid-template-columns: 1fr; }
+      .molina-card { padding: 23px; }
+      .molina-process .molina-card { padding-top: 60px; }
+
+      .molina-whatsapp {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="molina-page">
+    <header class="molina-header">
+      <div class="molina-container molina-nav">
+        <a class="molina-logo" href="../index.html" aria-label="BURGA, inicio">
+          <img src="../imagenes/logo/logo-burga.webp" alt="Logo de BURGA Construcciones y Acabados">
+        </a>
+
+        <button class="molina-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+        <nav class="molina-menu" aria-label="Menú principal">
+          <a href="../index.html">Inicio</a>
+          <a href="../nosotros.html">Nosotros</a>
+          <a href="../proyectos.html">Proyectos</a>
+          <a href="../zonas-de-atencion.html">Zonas de atención</a>
+          <a href="../contacto.html">Contacto</a>
+          <a class="molina-menu-cotizar"
+             href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20La%20Molina."
+             target="_blank" rel="noopener noreferrer">Cotizar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="molina-hero">
+        <div class="molina-container molina-hero-content">
+          <span class="molina-eyebrow">BURGA Construcciones &amp; Acabados</span>
+          <h1>Construcción y remodelación en La Molina</h1>
+          <p>
+            ¿Quieres renovar tu casa, remodelar un departamento o mejorar los acabados
+            de tu inmueble? En BURGA te ayudamos a organizar tu proyecto y evaluar las
+            soluciones que mejor se adapten a tus espacios y necesidades.
+          </p>
+          <a class="molina-button"
+             href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20La%20Molina."
+             target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+          <a class="molina-button-secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </section>
+
+      <section class="molina-section">
+        <div class="molina-container">
+          <div class="molina-heading">
+            <h2>Servicios de construcción y acabados en La Molina</h2>
+            <p>
+              Alternativas para casas, departamentos, oficinas y otros espacios,
+              según las características de cada proyecto.
+            </p>
+          </div>
+
+          <div class="molina-grid" id="servicios">
+            <article class="molina-card">
+              <h3>Construcción y ampliación</h3>
+              <p>Planificación de nuevos ambientes y ampliaciones, previa evaluación técnica del inmueble.</p>
+              <a href="../servicios/construccion.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Remodelación de casas</h3>
+              <p>Renovación de ambientes para mejorar su distribución, funcionalidad y apariencia.</p>
+              <a href="../servicios/remodelacion.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Remodelación de departamentos</h3>
+              <p>Mejoras de distribución y acabados para aprovechar mejor cada ambiente.</p>
+              <a href="../servicios/remodelacion.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Acabados y pintura</h3>
+              <p>Renovación de superficies y acabados interiores para conseguir un resultado uniforme.</p>
+              <a href="../servicios/acabados.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Instalación de pisos</h3>
+              <p>Instalación o renovación de pisos según el ambiente, el uso y el acabado elegido.</p>
+              <a href="../servicios/instalacion-de-pisos.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Remodelación de baños</h3>
+              <p>Renovación de revestimientos, accesorios y distribución según las condiciones del espacio.</p>
+              <a href="../servicios/remodelacion-de-banos.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Remodelación de cocinas</h3>
+              <p>Mejoras en distribución, revestimientos y acabados para aprovechar cada área.</p>
+              <a href="../servicios/remodelacion-de-cocinas.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Instalaciones eléctricas</h3>
+              <p>Revisión y trabajos eléctricos de acuerdo con las condiciones de la instalación existente.</p>
+              <a href="../servicios/instalaciones-electricas.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Gasfitería</h3>
+              <p>Revisión y renovación de instalaciones sanitarias, conexiones y puntos de agua.</p>
+              <a href="../servicios/gasfiteria.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Drywall</h3>
+              <p>Soluciones para divisiones interiores y cielos rasos, según las características del ambiente.</p>
+              <a href="../servicios/drywall.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Carpintería y puertas</h3>
+              <p>Mejoras y acabados en elementos de carpintería según las medidas y necesidades del espacio.</p>
+              <a href="../servicios/carpinteria.html">Conocer servicio</a>
+            </article>
+
+            <article class="molina-card">
+              <h3>Mantenimiento de inmuebles</h3>
+              <p>Trabajos puntuales para conservar y mejorar diferentes áreas de la propiedad.</p>
+              <a href="../servicios/mantenimiento.html">Conocer servicio</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="molina-section molina-section-light">
+        <div class="molina-container molina-columns">
+          <div class="molina-copy">
+            <h2>Planifica la renovación de tu inmueble</h2>
+            <p>
+              Cada casa o departamento tiene necesidades distintas. Antes de iniciar
+              los trabajos, es importante revisar el estado del inmueble, las áreas
+              involucradas, los materiales y los acabados que deseas.
+            </p>
+            <p>
+              En La Molina podemos conversar sobre tu idea y coordinar los siguientes
+              pasos para evaluar el alcance de la construcción o remodelación.
+            </p>
+            <a class="molina-button"
+               href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20deseo%20informaci%C3%B3n%20sobre%20una%20remodelaci%C3%B3n%20en%20La%20Molina."
+               target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+          </div>
+
+          <div class="molina-card">
+            <h3>¿Qué información necesitamos?</h3>
+            <ul class="molina-list">
+              <li>Tipo de inmueble y ubicación del proyecto.</li>
+              <li>Ambientes que deseas construir o renovar.</li>
+              <li>Medidas aproximadas y estado actual del espacio.</li>
+              <li>Materiales y acabados que tienes en mente.</li>
+              <li>Fotos de referencia, si las tienes disponibles.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="molina-section">
+        <div class="molina-container">
+          <div class="molina-heading">
+            <h2>¿Cómo coordinamos tu proyecto?</h2>
+            <p>Conocemos tus necesidades y organizamos la información antes de preparar una propuesta.</p>
+          </div>
+
+          <div class="molina-grid molina-process">
+            <article class="molina-card">
+              <h3>Nos cuentas tu idea</h3>
+              <p>Escríbenos e indica qué deseas construir, renovar o mejorar en tu inmueble.</p>
+            </article>
+
+            <article class="molina-card">
+              <h3>Revisamos los detalles</h3>
+              <p>Evaluamos la información inicial y coordinamos una revisión del espacio cuando sea necesaria.</p>
+            </article>
+
+            <article class="molina-card">
+              <h3>Coordinamos la cotización</h3>
+              <p>Definimos los trabajos por considerar y la información necesaria para estimar el proyecto.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="molina-section molina-section-light">
+        <div class="molina-container">
+          <div class="molina-heading">
+            <h2>Preguntas frecuentes</h2>
+            <p>Información inicial para quienes buscan construcción y remodelación en La Molina.</p>
+          </div>
+
+          <div class="molina-faq">
+            <details>
+              <summary>¿Qué trabajos de remodelación pueden evaluar?</summary>
+              <p>Podemos revisar proyectos de remodelación de casas y departamentos, además de acabados, pisos, baños, cocinas e instalaciones. El alcance se determina según cada caso.</p>
+            </details>
+
+            <details>
+              <summary>¿Cómo puedo solicitar una cotización?</summary>
+              <p>Escríbenos por WhatsApp e indica el distrito, el tipo de inmueble y los trabajos que deseas realizar. Las fotos y medidas aproximadas también pueden ayudar en la primera coordinación.</p>
+            </details>
+
+            <details>
+              <summary>¿Qué factores influyen en el presupuesto?</summary>
+              <p>El costo depende del área, el estado del inmueble, los materiales, los acabados y la complejidad de los trabajos. Es necesario revisar esos factores para estimarlo.</p>
+            </details>
+
+            <details>
+              <summary>¿Puedo consultar por instalaciones eléctricas o gasfitería?</summary>
+              <p>Sí. Podemos coordinar la revisión de las necesidades del inmueble. Las instalaciones deben evaluarse técnicamente antes de definir las intervenciones.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="molina-cta">
+        <div class="molina-container">
+          <h2>¿Tienes un proyecto en La Molina?</h2>
+          <p>
+            Cuéntanos qué deseas construir, renovar o mejorar. Conversemos sobre tu
+            proyecto y coordinemos los siguientes pasos.
+          </p>
+          <a class="molina-button"
+             href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20La%20Molina."
+             target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="molina-footer">
+      <div class="molina-container">
+        <p>Duo Grafico - todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <a class="molina-whatsapp"
+       href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20La%20Molina."
+       target="_blank" rel="noopener noreferrer" aria-label="Escribir a BURGA por WhatsApp">
+      WhatsApp
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      const page = document.querySelector(".molina-page");
+      if (!page) return;
+
+      const toggle = page.querySelector(".molina-toggle");
+      const menu = page.querySelector(".molina-menu");
+
+      if (toggle && menu) {
+        toggle.addEventListener("click", function () {
+          const isOpen = menu.classList.toggle("molina-open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+          toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+          toggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        menu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            menu.classList.remove("molina-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Abrir menú");
+            toggle.textContent = "☰";
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

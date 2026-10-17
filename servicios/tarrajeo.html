@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Tarrajeo de Paredes en Lima y Callao | BURGA</title>
+
+  <meta name="description" content="Servicio de tarrajeo de paredes, techos y fachadas en Lima y Callao. Preparación de superficies y revestimientos para viviendas y negocios.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="theme-color" content="#102746">
+
+  <link rel="canonical" href="https://construccionesburga.com/servicios/tarrajeo.html">
+
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <style>
+    .service-page {
+      color: #263449;
+      line-height: 1.7;
+    }
+
+    .service-container {
+      width: min(1120px, 100%);
+      margin: auto;
+    }
+
+    .service-hero {
+      background: linear-gradient(120deg, #102746, #1d4268);
+      color: #fff;
+      padding: 70px 20px;
+    }
+
+    .service-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .service-eyebrow {
+      color: #ff6475;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+    }
+
+    .service-hero h1 {
+      color: #fff;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.15;
+      margin: 15px 0 20px;
+    }
+
+    .service-hero p {
+      color: #edf3fa;
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+
+    .service-hero img {
+      display: block;
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .service-btn {
+      display: inline-block;
+      background: #e51e3d;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .service-btn:hover {
+      background: #bd1731;
+      color: #fff;
+    }
+
+    .service-section {
+      padding: 65px 20px;
+    }
+
+    .service-section-light {
+      background: #f5f7fa;
+    }
+
+    .service-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 35px;
+    }
+
+    .service-heading h2,
+    .service-copy h2 {
+      color: #102746;
+      font-size: clamp(26px, 3vw, 34px);
+      line-height: 1.25;
+      margin: 0 0 15px;
+    }
+
+    .service-heading p,
+    .service-copy p {
+      color: #526073;
+    }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #e4e9f0;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .service-number {
+      display: inline-flex;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      background: #fff0f2;
+      color: #d71938;
+      border-radius: 9px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      color: #102746;
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .service-card p {
+      color: #5b6677;
+      margin: 0;
+    }
+
+    .service-copy {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .service-checklist {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 25px;
+    }
+
+    .service-checklist li {
+      background: #fff;
+      border: 1px solid #e4e9f0;
+      border-radius: 8px;
+      padding: 13px 15px;
+    }
+
+    .service-checklist li::before {
+      content: "✓";
+      color: #d71938;
+      font-weight: 800;
+      margin-right: 10px;
+    }
+
+    .service-cta {
+      background: #102746;
+      color: #fff;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    .service-cta h2 {
+      color: #fff;
+      font-size: clamp(26px, 3vw, 36px);
+      margin: 0 0 12px;
+    }
+
+    .service-cta p {
+      color: #edf3fa;
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+
+    .service-related {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .service-related a {
+      color: #102746;
+      border: 1px solid #dce3ec;
+      background: #fff;
+      padding: 9px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    /* Encabezado */
+    .service-page .site-header {
+      background: #fff;
+      width: 100%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 100;
+    }
+
+    .service-page .site-header .header-container {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .service-page .site-header .logo {
+      display: block;
+      flex: 0 0 250px;
+      max-width: 250px;
+      line-height: 0;
+    }
+
+    .service-page .site-header .logo img {
+      display: block;
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .service-page .site-header .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .service-page .site-header .main-nav a {
+      color: #102746;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .service-page .site-header .main-nav a:hover {
+      color: #e51e3d;
+    }
+
+    .service-page .site-header .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: #e51e3d;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 7px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .service-page .nav-dropdown {
+      position: relative;
+    }
+
+    .service-page .nav-dropdown > .dropdown-trigger {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .service-page .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      max-height: 70vh;
+      overflow-y: auto;
+      background: #fff;
+      padding: 8px 0;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+      z-index: 200;
+    }
+
+    .service-page .dropdown-menu a {
+      display: block;
+      padding: 10px 16px;
+      white-space: normal;
+    }
+
+    .service-page .dropdown-menu a:hover {
+      background: #f5f7fa;
+    }
+
+    .service-footer {
+      background: #091a30;
+      color: #fff;
+      text-align: center;
+      padding: 22px 16px;
+      font-size: 14px;
+    }
+
+    .service-footer p {
+      margin: 0;
+    }
+
+    @media (min-width: 901px) {
+      .service-page .nav-dropdown:hover > .dropdown-menu,
+      .service-page .nav-dropdown:focus-within > .dropdown-menu {
+        display: block;
+      }
+
+      .service-page .menu-toggle {
+        display: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .service-page .site-header .header-container {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .service-page .site-header .logo {
+        flex: 0 1 190px;
+        max-width: 190px;
+      }
+
+      .service-page .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #dce3ec;
+        border-radius: 7px;
+        background: #fff;
+        color: #102746;
+        font-size: 27px;
+        cursor: pointer;
+      }
+
+      .service-page .site-header .main-nav {
+        display: none;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-top: 1px solid #e5eaf0;
+        padding: 8px 0;
+      }
+
+      .service-page .site-header .main-nav.is-open {
+        display: flex;
+      }
+
+      .service-page .site-header .main-nav > a,
+      .service-page .nav-dropdown > .dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 8px;
+      }
+
+      .service-page .dropdown-menu {
+        display: none;
+        position: static;
+        min-width: 0;
+        max-height: none;
+        overflow: visible;
+        padding: 0 0 0 14px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      .service-page .nav-dropdown.submenu-open > .dropdown-menu {
+        display: block;
+      }
+
+      .service-page .site-header .btn-whatsapp {
+        padding: 10px 14px;
+      }
+
+      .service-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .service-hero img {
+        height: 280px;
+      }
+
+      .service-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-page .site-header {
+        padding: 12px;
+      }
+
+      .service-page .site-header .logo {
+        flex-basis: 150px;
+        max-width: 150px;
+      }
+
+      .service-page .site-header .btn-whatsapp {
+        font-size: 13px;
+        padding: 9px 11px;
+      }
+
+      .service-page .site-header .main-nav a {
+        font-size: 13px;
+      }
+
+      .service-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .service-section {
+        padding: 45px 18px;
+      }
+
+      .service-checklist {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="service-page">
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <img src="../imagenes/logo/logo-burga.webp"
+             alt="BURGA Construcciones y Acabados">
+      </a>
+
+      <button class="menu-toggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false"
+              aria-controls="menu-principal">☰</button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../nosotros.html">Nosotros</a>
+
+        <div class="nav-dropdown">
+          <a href="../index.html#servicios" class="dropdown-trigger">
+            Servicios <span aria-hidden="true">▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="albanileria.html">Albañilería general</a>
+            <a href="construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="gasfiteria.html">Gasfitería</a>
+            <a href="instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="tarrajeo.html">Tarrajeo</a>
+            <a href="instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="techos-aligerados.html">Techos aligerados</a>
+            <a href="ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="construccion-de-muros.html">Construcción de muros</a>
+            <a href="columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+            <a href="pisos-de-concreto.html">Pisos de concreto</a>
+          </div>
+        </div>
+
+        <a href="../proyectos.html">Proyectos</a>
+        <a href="../zonas-de-atencion.html">Zonas de atención</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+
+      <a class="btn-whatsapp" href="https://wa.me/51906469942"
+         target="_blank" rel="noopener noreferrer">Cotizar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="service-container service-hero-grid">
+        <div>
+          <span class="service-eyebrow">BURGA Construcciones &amp; Acabados</span>
+          <h1>Tarrajeo de paredes y techos en Lima y Callao</h1>
+
+          <p>
+            ¿Necesitas nivelar una pared, preparar un techo o mejorar
+            el acabado de una fachada? Consulta por nuestros trabajos
+            de tarrajeo y revestimiento para viviendas y negocios.
+          </p>
+
+          <a class="service-btn"
+             href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20trabajo%20de%20tarrajeo."
+             target="_blank" rel="noopener noreferrer">
+            Solicitar cotización
+          </a>
+        </div>
+
+        <div>
+          <img src="../imagenes/servicios/tarrajeo.webp"
+               alt="Trabajo de tarrajeo de paredes y techos en Lima y Callao"
+               fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="service-section">
+      <div class="service-container">
+        <div class="service-heading">
+          <h2>Tarrajeo para diferentes superficies</h2>
+          <p>
+            El tarrajeo ayuda a preparar y uniformizar superficies antes
+            de aplicar pintura u otros acabados. El procedimiento depende
+            del estado de la base, el ambiente y el tipo de revestimiento.
+          </p>
+        </div>
+
+        <div class="service-cards">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Tarrajeo de paredes</h3>
+            <p>
+              Revestimiento de paredes interiores para obtener una
+              superficie uniforme antes del acabado final.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Tarrajeo de techos</h3>
+            <p>
+              Preparación y revestimiento de techos según las condiciones
+              de la superficie y el trabajo requerido.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Tarrajeo de fachadas</h3>
+            <p>
+              Trabajos de revestimiento exterior considerando la exposición
+              de la superficie y las condiciones del inmueble.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Resane de superficies</h3>
+            <p>
+              Evaluación de zonas deterioradas y reparación localizada
+              antes de aplicar nuevos acabados.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">05</span>
+            <h3>Preparación para pintura</h3>
+            <p>
+              Trabajos para dejar la superficie en condiciones adecuadas
+              para la siguiente etapa del acabado.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">06</span>
+            <h3>Trabajos de revestimiento</h3>
+            <p>
+              Consulta por otros trabajos de preparación y acabado de
+              paredes y superficies de construcción.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-section service-section-light">
+      <div class="service-container service-copy">
+        <h2>¿Qué se debe evaluar antes del tarrajeo?</h2>
+
+        <p>
+          Antes de aplicar un revestimiento, es importante revisar si la
+          superficie está firme, limpia y libre de materiales sueltos.
+          También se deben identificar posibles filtraciones, humedad
+          persistente o daños que necesiten una reparación previa.
+        </p>
+
+        <p>
+          La preparación de la base, la elección de materiales y el
+          procedimiento de aplicación influyen en el resultado. Por eso,
+          el alcance del trabajo debe definirse según las condiciones
+          reales del área.
+        </p>
+
+        <h2>Información para solicitar una cotización</h2>
+
+        <ul class="service-checklist">
+          <li>Distrito donde se encuentra la obra</li>
+          <li>Superficie: pared, techo o fachada</li>
+          <li>Metros cuadrados aproximados</li>
+          <li>Estado actual de la superficie</li>
+          <li>Fotografías del área, si las tienes</li>
+          <li>Fecha estimada para realizar el trabajo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="service-section">
+      <div class="service-container">
+        <div class="service-heading">
+          <h2>Otros servicios relacionados</h2>
+          <p>
+            Complementa tu proyecto con otros trabajos de construcción
+            y acabados.
+          </p>
+
+          <div class="service-related">
+            <a href="albanileria.html">Albañilería general</a>
+            <a href="instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="construccion-de-viviendas.html">Construcción de viviendas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-cta">
+      <div class="service-container">
+        <h2>¿Necesitas tarrajear una pared o un techo?</h2>
+        <p>
+          Escríbenos por WhatsApp e indícanos la ubicación, el área
+          aproximada y el tipo de superficie.
+        </p>
+
+        <a class="service-btn"
+           href="https://wa.me/51906469942?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20tarrajeo."
+           target="_blank" rel="noopener noreferrer">
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="service-footer">
+    <p>Duo Grafico - todos los derechos reservados</p>
+  </footer>
+
+  <a href="https://wa.me/51906469942"
+     class="whatsapp-float"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contactar a BURGA por WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="../js/menu.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

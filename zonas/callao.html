@@ -1,0 +1,1109 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en el Callao | BURGA</title>
+  
+<link rel="icon" type="image/png" href="imagenes/logo/favicon.png">
+
+  <meta name="description" content="Construcción y remodelación en el Callao. Consulta por albañilería, ampliaciones, pisos, mayólicas, gasfitería y acabados con BURGA.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/callao.html">
+
+  <style>
+    :root {
+      --callao-navy: #102746;
+      --callao-blue: #183c67;
+      --callao-red: #e63946;
+      --callao-white: #ffffff;
+      --callao-light: #f4f7fb;
+      --callao-text: #26364a;
+      --callao-muted: #64748b;
+      --callao-border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--callao-text);
+      background: var(--callao-white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .callao-container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    /* CABECERA Y MENÚ */
+
+    .callao-header {
+      background: var(--callao-white);
+      box-shadow: 0 3px 15px rgba(16, 39, 70, 0.08);
+      position: relative;
+      z-index: 100;
+    }
+
+    .callao-header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .callao-logo img {
+      width: 190px;
+      max-height: 72px;
+      object-fit: contain;
+    }
+
+    .callao-menu-button {
+      display: none;
+      border: 0;
+      background: var(--callao-navy);
+      color: var(--callao-white);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .callao-nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .callao-nav > a,
+    .callao-dropdown-button {
+      color: var(--callao-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .callao-nav > a:hover,
+    .callao-dropdown-button:hover {
+      color: var(--callao-red);
+    }
+
+    .callao-dropdown {
+      position: relative;
+    }
+
+    .callao-dropdown-button {
+      border: 0;
+      background: transparent;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .callao-dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      max-height: 70vh;
+      overflow-y: auto;
+      padding: 10px;
+      background: var(--callao-white);
+      box-shadow: 0 8px 25px rgba(16, 39, 70, 0.15);
+      border-radius: 8px;
+    }
+
+    .callao-dropdown:hover .callao-dropdown-content,
+    .callao-dropdown:focus-within .callao-dropdown-content {
+      display: block;
+    }
+
+    .callao-dropdown-content a {
+      display: block;
+      padding: 9px 10px;
+      color: var(--callao-navy);
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .callao-dropdown-content a:hover {
+      background: var(--callao-light);
+      color: var(--callao-red);
+    }
+
+    .callao-menu-cotizar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      border-radius: 6px;
+      background: var(--callao-red);
+      color: var(--callao-white) !important;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .callao-menu-cotizar:hover {
+      background: #c92835;
+    }
+
+    /* PORTADA */
+
+    .callao-hero {
+      background: linear-gradient(
+        115deg,
+        rgba(16, 39, 70, 0.98),
+        rgba(24, 60, 103, 0.92)
+      );
+      color: var(--callao-white);
+      padding: 82px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .callao-hero::after {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border: 55px solid rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      right: -100px;
+      bottom: -180px;
+    }
+
+    .callao-hero-content {
+      max-width: 790px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .callao-eyebrow {
+      display: inline-block;
+      color: #ffd6db;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    .callao-hero h1 {
+      font-size: clamp(32px, 5vw, 49px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .callao-hero p {
+      max-width: 690px;
+      font-size: 17px;
+      color: #edf3fa;
+      margin-bottom: 28px;
+    }
+
+    .callao-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .callao-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 7px;
+      padding: 13px 21px;
+      font-weight: 700;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .callao-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .callao-btn-primary {
+      background: var(--callao-red);
+      color: var(--callao-white);
+    }
+
+    .callao-btn-primary:hover {
+      background: #c92835;
+    }
+
+    .callao-btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: var(--callao-white);
+    }
+
+    /* SECCIONES */
+
+    .callao-section {
+      padding: 70px 0;
+    }
+
+    .callao-section-light {
+      background: var(--callao-light);
+    }
+
+    .callao-section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .callao-section-heading h2 {
+      color: var(--callao-navy);
+      font-size: clamp(26px, 4vw, 35px);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .callao-section-heading p {
+      color: var(--callao-muted);
+    }
+
+    .callao-intro {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .callao-intro h2 {
+      color: var(--callao-navy);
+      font-size: 30px;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .callao-intro p {
+      margin-bottom: 14px;
+    }
+
+    .callao-panel {
+      padding: 30px;
+      border-left: 5px solid var(--callao-red);
+      border-radius: 8px;
+      background: var(--callao-white);
+      box-shadow: 0 8px 25px rgba(16, 39, 70, 0.07);
+    }
+
+    .callao-panel h3 {
+      color: var(--callao-navy);
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .callao-check-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .callao-check-list li {
+      position: relative;
+      padding-left: 27px;
+    }
+
+    .callao-check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--callao-red);
+      font-weight: 800;
+    }
+
+    /* SERVICIOS */
+
+    .callao-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .callao-card {
+      padding: 27px;
+      background: var(--callao-white);
+      border: 1px solid var(--callao-border);
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(16, 39, 70, 0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .callao-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(16, 39, 70, 0.09);
+    }
+
+    .callao-card-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: #fff0f1;
+      color: var(--callao-red);
+      border-radius: 9px;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .callao-card h3 {
+      color: var(--callao-navy);
+      font-size: 19px;
+      line-height: 1.35;
+      margin-bottom: 11px;
+    }
+
+    .callao-card p {
+      color: var(--callao-muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .callao-card-link {
+      color: var(--callao-red);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* PASOS */
+
+    .callao-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      counter-reset: callao-step;
+    }
+
+    .callao-step {
+      padding: 26px;
+      background: var(--callao-white);
+      border: 1px solid var(--callao-border);
+      border-radius: 9px;
+      counter-increment: callao-step;
+    }
+
+    .callao-step::before {
+      content: "0" counter(callao-step);
+      display: block;
+      color: var(--callao-red);
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .callao-step h3 {
+      color: var(--callao-navy);
+      margin-bottom: 9px;
+      font-size: 19px;
+    }
+
+    .callao-step p {
+      color: var(--callao-muted);
+      font-size: 14px;
+    }
+
+    .callao-info-box {
+      padding: 26px;
+      border-radius: 9px;
+      background: #fff7f7;
+      border: 1px solid #ffd9dd;
+      margin-top: 28px;
+    }
+
+    .callao-info-box h3 {
+      color: var(--callao-navy);
+      margin-bottom: 10px;
+    }
+
+    /* PREGUNTAS FRECUENTES */
+
+    .callao-faq {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .callao-faq-item {
+      padding: 21px 23px;
+      margin-bottom: 13px;
+      background: var(--callao-white);
+      border: 1px solid var(--callao-border);
+      border-radius: 8px;
+    }
+
+    .callao-faq-item h3 {
+      color: var(--callao-navy);
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .callao-faq-item p {
+      color: var(--callao-muted);
+      font-size: 15px;
+    }
+
+    /* CTA Y PIE DE PÁGINA */
+
+    .callao-cta {
+      padding: 65px 0;
+      background: var(--callao-navy);
+      color: var(--callao-white);
+      text-align: center;
+    }
+
+    .callao-cta h2 {
+      font-size: clamp(27px, 4vw, 36px);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .callao-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e6edf6;
+    }
+
+    .callao-footer {
+      padding: 28px 0;
+      background: #0b1c32;
+      color: #d8e0ea;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .callao-footer p + p {
+      margin-top: 7px;
+    }
+
+    .callao-footer a {
+      color: var(--callao-white);
+    }
+
+    .callao-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      background: #25d366;
+      color: var(--callao-white);
+      border-radius: 50%;
+      font-size: 25px;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .callao-menu-button {
+        display: block;
+      }
+
+      .callao-header-inner {
+        min-height: 78px;
+      }
+
+      .callao-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px 4%;
+        background: var(--callao-white);
+        box-shadow: 0 12px 18px rgba(16, 39, 70, 0.12);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        max-height: 75vh;
+        overflow-y: auto;
+      }
+
+      .callao-nav.callao-open {
+        display: flex;
+      }
+
+      .callao-nav > a,
+      .callao-dropdown-button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 5px;
+      }
+
+      .callao-dropdown-content {
+        display: none;
+        position: static;
+        max-height: none;
+        overflow: visible;
+        box-shadow: none;
+        background: var(--callao-light);
+        margin-bottom: 8px;
+      }
+
+      .callao-dropdown.callao-dropdown-open .callao-dropdown-content {
+        display: block;
+      }
+
+      .callao-menu-cotizar {
+        width: 100%;
+        margin-top: 8px;
+        text-align: center;
+      }
+
+      .callao-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .callao-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .callao-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .callao-logo img {
+        width: 155px;
+      }
+
+      .callao-hero {
+        padding: 60px 0;
+      }
+
+      .callao-hero p {
+        font-size: 15px;
+      }
+
+      .callao-actions {
+        flex-direction: column;
+      }
+
+      .callao-btn {
+        width: 100%;
+      }
+
+      .callao-section {
+        padding: 52px 0;
+      }
+
+      .callao-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .callao-card,
+      .callao-panel {
+        padding: 23px;
+      }
+
+      .callao-whatsapp-float {
+        width: 52px;
+        height: 52px;
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="callao-header">
+    <div class="callao-container callao-header-inner">
+
+      <a class="callao-logo" href="../index.html" aria-label="BURGA - Inicio">
+        <img
+          src="../imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="190"
+          height="72">
+      </a>
+
+      <button
+        class="callao-menu-button"
+        id="callao-menu-button"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="callao-navigation">
+        ☰
+      </button>
+
+      <nav class="callao-nav" id="callao-navigation" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../proyectos.html">Proyectos</a>
+
+        <div class="callao-dropdown" id="callao-services-dropdown">
+          <button
+            class="callao-dropdown-button"
+            type="button"
+            aria-expanded="false">
+            Servicios ▾
+          </button>
+
+          <div class="callao-dropdown-content">
+            <a href="../servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="../servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="../servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="../servicios/albanileria.html">Albañilería</a>
+            <a href="../servicios/construccion-de-muros.html">Construcción de muros</a>
+            <a href="../servicios/columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="../servicios/techos-aligerados.html">Techos aligerados</a>
+            <a href="../servicios/tarrajeo.html">Tarrajeo</a>
+            <a href="../servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="../servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="../servicios/pisos-de-concreto.html">Pisos de concreto</a>
+            <a href="../servicios/gasfiteria.html">Gasfitería</a>
+            <a href="../servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="../servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+          </div>
+        </div>
+
+        <a href="../zonas-de-atencion.html">Zonas de atención</a>
+        <a href="../contacto.html">Contacto</a>
+
+        <!-- BOTÓN DE COTIZACIÓN: MANTENER EN TODAS LAS PÁGINAS -->
+        <a
+          class="callao-menu-cotizar"
+          href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20el%20Callao."
+          target="_blank"
+          rel="noopener noreferrer">
+          Cotizar
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="callao-hero">
+      <div class="callao-container">
+        <div class="callao-hero-content">
+          <span class="callao-eyebrow">Construcción y acabados en Lima y Callao</span>
+
+          <h1>Construcción y remodelación en el Callao</h1>
+
+          <p>
+            ¿Necesitas construir, ampliar o renovar una vivienda o negocio en
+            el Callao? En BURGA puedes consultar por trabajos de construcción,
+            albañilería, instalaciones y acabados para organizar tu proyecto.
+          </p>
+
+          <div class="callao-actions">
+            <a
+              class="callao-btn callao-btn-primary"
+              href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quiero%20consultar%20por%20un%20proyecto%20en%20el%20Callao."
+              target="_blank"
+              rel="noopener noreferrer">
+              Cotizar por WhatsApp
+            </a>
+
+            <a class="callao-btn callao-btn-outline" href="#callao-servicios">
+              Ver servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callao-section">
+      <div class="callao-container callao-intro">
+
+        <div>
+          <h2>Soluciones de construcción para proyectos en el Callao</h2>
+
+          <p>
+            Cada proyecto tiene sus propias características. Antes de iniciar
+            una obra, es importante identificar los trabajos necesarios, las
+            condiciones actuales del inmueble y los acabados que deseas.
+          </p>
+
+          <p>
+            Si estás organizando una construcción, quieres ampliar ambientes o
+            necesitas renovar tu propiedad, puedes consultar por los servicios
+            de BURGA Construcciones &amp; Acabados.
+          </p>
+
+          <p>
+            Comparte la ubicación aproximada, el tipo de trabajo y las medidas
+            o fotografías que tengas disponibles. Con esa información se podrá
+            evaluar qué pasos seguir para solicitar una cotización.
+          </p>
+        </div>
+
+        <aside class="callao-panel">
+          <h3>Trabajos que puedes consultar</h3>
+
+          <ul class="callao-check-list">
+            <li>Construcción y ampliación de viviendas.</li>
+            <li>Remodelación de casas y negocios.</li>
+            <li>Albañilería y construcción de muros.</li>
+            <li>Tarrajeo y trabajos de acabados.</li>
+            <li>Instalación de pisos y mayólicas.</li>
+            <li>Gasfitería e instalaciones eléctricas.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="callao-section callao-section-light" id="callao-servicios">
+      <div class="callao-container">
+
+        <div class="callao-section-heading">
+          <h2>Servicios de construcción en el Callao</h2>
+          <p>
+            Conoce las principales categorías de trabajo y revisa los detalles
+            de cada servicio antes de definir tu proyecto.
+          </p>
+        </div>
+
+        <div class="callao-grid">
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">⌂</div>
+            <h3>Construcción de viviendas</h3>
+            <p>
+              Consulta por proyectos de vivienda según las características
+              del terreno y las necesidades de construcción.
+            </p>
+            <a class="callao-card-link" href="../servicios/construccion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">↗</div>
+            <h3>Ampliación de viviendas</h3>
+            <p>
+              Evalúa alternativas para incorporar ambientes y aprovechar mejor
+              los espacios de tu propiedad.
+            </p>
+            <a class="callao-card-link" href="../servicios/ampliacion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▦</div>
+            <h3>Remodelación de casas</h3>
+            <p>
+              Organiza la renovación de ambientes y la actualización de los
+              acabados de tu vivienda o negocio.
+            </p>
+            <a class="callao-card-link" href="../servicios/remodelacion-de-casas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▤</div>
+            <h3>Albañilería y muros</h3>
+            <p>
+              Consulta por construcción de muros, divisiones, reparaciones y
+              otros trabajos de albañilería.
+            </p>
+            <a class="callao-card-link" href="../servicios/albanileria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">◫</div>
+            <h3>Instalación de pisos</h3>
+            <p>
+              Consulta por instalación de cerámicos, porcelanato y otros
+              revestimientos para pisos.
+            </p>
+            <a class="callao-card-link" href="../servicios/instalacion-de-pisos.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▧</div>
+            <h3>Instalación de mayólicas</h3>
+            <p>
+              Revisa opciones de revestimiento para baños, cocinas, paredes y
+              otras superficies.
+            </p>
+            <a class="callao-card-link" href="../servicios/instalacion-de-mayolicas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">⌁</div>
+            <h3>Gasfitería</h3>
+            <p>
+              Consulta por tuberías, griferías, sanitarios y revisión de
+              instalaciones de agua.
+            </p>
+            <a class="callao-card-link" href="../servicios/gasfiteria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">ϟ</div>
+            <h3>Instalaciones eléctricas</h3>
+            <p>
+              Consulta por cableado, iluminación, tomacorrientes y revisión de
+              instalaciones eléctricas.
+            </p>
+            <a class="callao-card-link" href="../servicios/instalaciones-electricas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▱</div>
+            <h3>Tarrajeo y acabados</h3>
+            <p>
+              Consulta por preparación y revestimiento de paredes, techos y
+              otras superficies.
+            </p>
+            <a class="callao-card-link" href="../servicios/tarrajeo.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▰</div>
+            <h3>Pisos de concreto</h3>
+            <p>
+              Consulta por trabajos de concreto de acuerdo con las dimensiones
+              y el uso previsto de la superficie.
+            </p>
+            <a class="callao-card-link" href="../servicios/pisos-de-concreto.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▥</div>
+            <h3>Columnas y vigas</h3>
+            <p>
+              Consulta por trabajos estructurales que requieren evaluación
+              técnica y planificación previa.
+            </p>
+            <a class="callao-card-link" href="../servicios/columnas-y-vigas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="callao-card">
+            <div class="callao-card-icon" aria-hidden="true">▱</div>
+            <h3>Techos aligerados</h3>
+            <p>
+              Consulta por trabajos de losas y techos aligerados según las
+              características de la obra.
+            </p>
+            <a class="callao-card-link" href="../servicios/techos-aligerados.html">Conocer servicio →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="callao-section">
+      <div class="callao-container">
+
+        <div class="callao-section-heading">
+          <h2>¿Cómo solicitar una cotización para tu obra?</h2>
+          <p>
+            Comparte la información inicial para evaluar las necesidades de tu
+            proyecto en el Callao.
+          </p>
+        </div>
+
+        <div class="callao-steps">
+
+          <article class="callao-step">
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>
+              Indica si deseas construir, ampliar, remodelar o realizar un
+              trabajo específico de acabados.
+            </p>
+          </article>
+
+          <article class="callao-step">
+            <h3>Comparte los detalles</h3>
+            <p>
+              Señala la ubicación aproximada, las dimensiones disponibles y,
+              si tienes, fotografías del área.
+            </p>
+          </article>
+
+          <article class="callao-step">
+            <h3>Coordina los siguientes pasos</h3>
+            <p>
+              Revisa el alcance, los materiales y las condiciones de ejecución
+              necesarias para preparar una cotización.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="callao-info-box">
+          <h3>Consideraciones técnicas antes de construir</h3>
+          <p>
+            Las ampliaciones de pisos y las modificaciones de columnas, vigas
+            u otros elementos estructurales requieren evaluación técnica previa.
+            Según las características de la obra, pueden corresponder
+            profesionales habilitados y permisos municipales.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="callao-section callao-section-light">
+      <div class="callao-container">
+
+        <div class="callao-section-heading">
+          <h2>Preguntas frecuentes sobre construcción en el Callao</h2>
+          <p>Información útil para organizar tu proyecto.</p>
+        </div>
+
+        <div class="callao-faq">
+
+          <article class="callao-faq-item">
+            <h3>¿Qué servicios puedo consultar en el Callao?</h3>
+            <p>
+              Puedes consultar por construcción de viviendas, ampliaciones,
+              remodelaciones, albañilería, tarrajeo, pisos, mayólicas,
+              gasfitería e instalaciones eléctricas.
+            </p>
+          </article>
+
+          <article class="callao-faq-item">
+            <h3>¿Cómo solicito una cotización?</h3>
+            <p>
+              Escríbenos por WhatsApp e indica qué trabajo necesitas, la
+              ubicación aproximada y las características del espacio. El costo
+              dependerá del alcance y las condiciones del proyecto.
+            </p>
+          </article>
+
+          <article class="callao-faq-item">
+            <h3>¿Puedo consultar antes de tener un diseño terminado?</h3>
+            <p>
+              Sí. Puedes compartir tu idea inicial y los detalles que tengas
+              para identificar qué información conviene reunir antes de
+              definir el proyecto.
+            </p>
+          </article>
+
+          <article class="callao-faq-item">
+            <h3>¿De qué depende el costo de una remodelación?</h3>
+            <p>
+              Depende de las dimensiones, el estado actual del inmueble,
+              los materiales, los acabados y la complejidad de los trabajos.
+            </p>
+          </article>
+
+          <article class="callao-faq-item">
+            <h3>¿Necesito una evaluación técnica para ampliar mi vivienda?</h3>
+            <p>
+              Cuando una ampliación afecta la estructura o incorpora nuevos
+              pisos, se debe evaluar la seguridad de la edificación y los
+              requisitos técnicos y municipales aplicables.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="callao-cta">
+      <div class="callao-container">
+        <h2>¿Tienes un proyecto en el Callao?</h2>
+
+        <p>
+          Cuéntanos qué deseas construir, ampliar o remodelar. Comparte los
+          detalles de tu proyecto y consulta los siguientes pasos con BURGA
+          Construcciones &amp; Acabados.
+        </p>
+
+        <a
+          class="callao-btn callao-btn-primary"
+          href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20deseo%20cotizar%20un%20proyecto%20en%20el%20Callao."
+          target="_blank"
+          rel="noopener noreferrer">
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="callao-footer">
+    <div class="callao-container">
+      <p><strong>BURGA Construcciones &amp; Acabados</strong></p>
+      <p>Servicios de construcción y acabados en Lima Metropolitana y Callao.</p>
+      <p>
+        <a href="../zonas-de-atencion.html">Zonas de atención</a> |
+        <a href="../contacto.html">Contacto</a>
+      </p>
+      <p>Duo Grafico - todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <a
+    class="callao-whatsapp-float"
+    href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20hacer%20una%20consulta."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">
+    W
+  </a>
+
+  <script>
+    (function () {
+      const menuButton = document.getElementById("callao-menu-button");
+      const navigation = document.getElementById("callao-navigation");
+      const servicesDropdown = document.getElementById("callao-services-dropdown");
+      const servicesButton = servicesDropdown.querySelector(".callao-dropdown-button");
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("callao-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Cerrar menú" : "Abrir menú"
+        );
+        menuButton.textContent = isOpen ? "✕" : "☰";
+      });
+
+      servicesButton.addEventListener("click", function () {
+        const isOpen = servicesDropdown.classList.toggle("callao-dropdown-open");
+        servicesButton.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navigation.classList.remove("callao-open");
+          servicesDropdown.classList.remove("callao-dropdown-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Abrir menú");
+          menuButton.textContent = "☰";
+          servicesButton.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zonas de Atención en Lima y Callao | BURGA</title>
+  
+  <link rel="icon" type="image/png" href="imagenes/logo/favicon.png">
+
+  <meta name="description" content="Consulta las zonas de atención de BURGA Construcciones y Acabados en Lima y Callao. Conoce nuestros servicios y cotiza tu proyecto por WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/zonas-de-atencion.html">
+
+  <style>
+    :root {
+      --blue: #102746;
+      --blue-light: #1d4268;
+      --red: #e51e3d;
+      --text: #263449;
+      --muted: #5b6677;
+      --light: #f5f7fa;
+      --border: #e4e9f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body.zones-page {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .zones-container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    a {
+      transition: color .2s ease, background .2s ease;
+    }
+
+    /* ENCABEZADO */
+
+    .zones-page .site-header {
+      width: 100%;
+      padding: 12px 20px;
+      background: #fff;
+      position: relative;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(16, 39, 70, .06);
+    }
+
+    .zones-page .header-container {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .zones-page .logo {
+      display: block;
+      flex: 0 0 220px;
+      max-width: 220px;
+      line-height: 0;
+    }
+
+    .zones-page .logo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .zones-page .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .zones-page .main-nav a {
+      color: var(--blue);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .zones-page .main-nav a:hover,
+    .zones-page .main-nav a[aria-current="page"] {
+      color: var(--red);
+    }
+
+    .zones-page .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 11px 17px;
+      border-radius: 7px;
+      background: var(--red);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .zones-page .btn-whatsapp:hover {
+      background: #bd1731;
+      color: #fff;
+    }
+
+    .zones-page .menu-toggle {
+      display: none;
+    }
+
+    .zones-page .nav-dropdown {
+      position: relative;
+    }
+
+    .zones-page .dropdown-trigger {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .zones-page .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 245px;
+      max-height: 70vh;
+      overflow-y: auto;
+      padding: 8px 0;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+      z-index: 200;
+    }
+
+    .zones-page .dropdown-menu a {
+      display: block;
+      padding: 9px 15px;
+    }
+
+    .zones-page .dropdown-menu a:hover {
+      background: var(--light);
+    }
+
+    @media (min-width: 901px) {
+      .zones-page .nav-dropdown:hover > .dropdown-menu,
+      .zones-page .nav-dropdown:focus-within > .dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* PORTADA */
+
+    .zones-hero {
+      padding: 76px 0;
+      color: #fff;
+      background: linear-gradient(120deg, var(--blue), var(--blue-light));
+    }
+
+    .zones-hero-content {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .zones-eyebrow {
+      display: inline-block;
+      color: #ff8291;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .zones-hero h1 {
+      margin: 14px 0 18px;
+      color: #fff;
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.15;
+    }
+
+    .zones-hero p {
+      max-width: 730px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+      font-size: 17px;
+    }
+
+    .zones-button {
+      display: inline-block;
+      padding: 13px 22px;
+      color: #fff;
+      background: var(--red);
+      border: 0;
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s ease;
+    }
+
+    .zones-button:hover {
+      background: #bd1731;
+      color: #fff;
+    }
+
+    /* DISTRITOS */
+
+    .zones-section {
+      padding: 70px 0;
+    }
+
+    .zones-section-light {
+      background: var(--light);
+    }
+
+    .zones-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .zones-heading h2 {
+      margin: 0 0 14px;
+      color: var(--blue);
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .zones-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .zones-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .zone-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      height: 100%;
+      padding: 26px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(16, 39, 70, .04);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .zone-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(16, 39, 70, .09);
+    }
+
+    .zone-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 15px;
+      color: #d71938;
+      background: #fff0f2;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .zone-card h3 {
+      margin: 0 0 10px;
+      color: var(--blue);
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .zone-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .zone-card a {
+      margin-top: auto;
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .zone-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* OTROS DISTRITOS */
+
+    .zones-other-districts {
+      margin-top: 38px;
+      padding: 36px 24px;
+      text-align: center;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .zones-other-districts h2 {
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: clamp(25px, 3vw, 32px);
+      line-height: 1.3;
+    }
+
+    .zones-other-districts p {
+      max-width: 680px;
+      margin: 0 auto 22px;
+      color: var(--muted);
+    }
+
+    /* SERVICIOS */
+
+    .zones-services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .zones-service-item {
+      padding: 22px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .zones-service-item h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 18px;
+    }
+
+    .zones-service-item p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .zones-service-item a {
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .zones-service-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* INFORMACIÓN ADICIONAL */
+
+    .zones-info {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .zones-info h2 {
+      color: var(--blue);
+      font-size: clamp(25px, 3vw, 33px);
+      line-height: 1.25;
+    }
+
+    .zones-info p {
+      color: var(--muted);
+    }
+
+    .zones-info-box {
+      margin-top: 25px;
+      padding: 22px;
+      background: var(--light);
+      border-left: 4px solid var(--red);
+      border-radius: 8px;
+    }
+
+    /* CTA Y PIE */
+
+    .zones-cta {
+      padding: 60px 0;
+      color: #fff;
+      text-align: center;
+      background: var(--blue);
+    }
+
+    .zones-cta h2 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .zones-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #edf3fa;
+    }
+
+    .zones-footer {
+      padding: 22px 16px;
+      color: #fff;
+      background: #091a30;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .zones-footer p {
+      margin: 0;
+    }
+
+    .zones-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      padding: 13px 18px;
+      color: #fff;
+      background: var(--red);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+    }
+
+    .zones-whatsapp-float:hover {
+      background: #bd1731;
+      color: #fff;
+    }
+
+    /* TABLETS */
+
+    @media (max-width: 1000px) {
+      .zones-page .header-container {
+        gap: 14px;
+      }
+
+      .zones-page .logo {
+        flex-basis: 185px;
+        max-width: 185px;
+      }
+
+      .zones-page .main-nav {
+        gap: 12px;
+      }
+
+      .zones-page .main-nav a {
+        font-size: 13px;
+      }
+    }
+
+    /* MENÚ MÓVIL */
+
+    @media (max-width: 900px) {
+      .zones-page .header-container {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .zones-page .logo {
+        flex: 0 1 190px;
+        max-width: 190px;
+      }
+
+      .zones-page .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #dce3ec;
+        border-radius: 7px;
+        background: #fff;
+        color: var(--blue);
+        font-size: 27px;
+        cursor: pointer;
+      }
+
+      .zones-page .main-nav {
+        display: none;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-top: 1px solid #e5eaf0;
+        padding: 8px 0;
+      }
+
+      .zones-page .main-nav.is-open {
+        display: flex;
+      }
+
+      .zones-page .main-nav > a,
+      .zones-page .nav-dropdown > .dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 8px;
+      }
+
+      .zones-page .dropdown-menu {
+        display: none;
+        position: static;
+        min-width: 0;
+        max-height: none;
+        overflow: visible;
+        padding: 0 0 0 14px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      .zones-page .nav-dropdown.submenu-open > .dropdown-menu {
+        display: block;
+      }
+
+      .zones-page .btn-whatsapp {
+        width: 100%;
+        padding: 12px 14px;
+        margin-top: 8px;
+      }
+
+      .zones-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .zones-services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* CELULARES */
+
+    @media (max-width: 600px) {
+      .zones-container {
+        width: calc(100% - 32px);
+      }
+
+      .zones-page .site-header {
+        padding: 12px;
+      }
+
+      .zones-page .logo {
+        flex-basis: 145px;
+        max-width: 145px;
+      }
+
+      .zones-hero {
+        padding: 54px 0;
+      }
+
+      .zones-hero h1 {
+        font-size: 34px;
+      }
+
+      .zones-hero p {
+        font-size: 16px;
+      }
+
+      .zones-section {
+        padding: 48px 0;
+      }
+
+      .zones-grid,
+      .zones-services {
+        grid-template-columns: 1fr;
+      }
+
+      .zone-card {
+        padding: 23px;
+      }
+
+      .zones-heading {
+        margin-bottom: 28px;
+      }
+
+      .zones-other-districts {
+        padding: 28px 18px;
+      }
+
+      .zones-cta {
+        padding: 48px 0;
+      }
+
+      .zones-whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="zones-page">
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <a href="index.html" class="logo" aria-label="BURGA - Inicio">
+        <img
+          src="imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="250"
+          height="80">
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal">☰</button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+
+        <div class="nav-dropdown" id="services-dropdown">
+          <a href="index.html#servicios" class="dropdown-trigger" aria-expanded="false">
+            Servicios <span aria-hidden="true">▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="servicios/albanileria.html">Albañilería general</a>
+            <a href="servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="servicios/gasfiteria.html">Gasfitería</a>
+            <a href="servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="servicios/tarrajeo.html">Tarrajeo</a>
+            <a href="servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="servicios/techos-aligerados.html">Techos aligerados</a>
+            <a href="servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="servicios/construccion-de-muros.html">Construcción de muros</a>
+            <a href="servicios/columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+            <a href="servicios/pisos-de-concreto.html">Pisos de concreto</a>
+          </div>
+        </div>
+
+        <a href="proyectos.html">Proyectos</a>
+        <a href="zonas-de-atencion.html" aria-current="page">Zonas de atención</a>
+        <a href="contacto.html">Contacto</a>
+
+        <a
+          class="btn-whatsapp"
+          href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto."
+          target="_blank"
+          rel="noopener noreferrer">Cotizar</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="zones-hero">
+      <div class="zones-container zones-hero-content">
+
+        <span class="zones-eyebrow">BURGA Construcciones &amp; Acabados</span>
+
+        <h1>Zonas de atención en Lima Metropolitana y Callao</h1>
+
+        <p>
+          Consulta por nuestros servicios de construcción, remodelación y
+          acabados. Selecciona tu distrito para conocer la información
+          relacionada con los trabajos que necesitas.
+        </p>
+
+        <a
+          class="zones-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20si%20atienden%20mi%20distrito."
+          target="_blank"
+          rel="noopener noreferrer">Consultar por WhatsApp</a>
+
+      </div>
+    </section>
+
+    <!-- DISTRITOS -->
+    <section class="zones-section">
+      <div class="zones-container">
+
+        <div class="zones-heading">
+          <span class="zones-eyebrow">Encuentra tu distrito</span>
+          <h2>Zonas de atención en Lima y Callao</h2>
+          <p>
+            Consulta por nuestros servicios de construcción, remodelación y
+            acabados en los siguientes distritos. La disponibilidad se confirma
+            según cada proyecto.
+          </p>
+        </div>
+
+        <div class="zones-grid">
+
+          <article class="zone-card">
+            <span class="zone-number">01</span>
+            <h3>Construcción en Ate</h3>
+            <p>Consulta por trabajos de construcción, remodelación y acabados para proyectos ubicados en Ate.</p>
+            <a href="zonas/ate.html">Ver información de Ate →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">02</span>
+            <h3>Construcción en Callao</h3>
+            <p>Revisa la información de nuestros servicios para proyectos ubicados en el Callao.</p>
+            <a href="zonas/callao.html">Ver información del Callao →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">03</span>
+            <h3>Construcción en Comas</h3>
+            <p>Consulta por servicios de construcción, mejoramiento de espacios y acabados en Comas.</p>
+            <a href="zonas/comas.html">Ver información de Comas →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">04</span>
+            <h3>Construcción en San Juan de Lurigancho</h3>
+            <p>Conoce la información relacionada con proyectos de vivienda, ampliación y remodelación.</p>
+            <a href="zonas/san-juan-de-lurigancho.html">Ver información de San Juan de Lurigancho →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">05</span>
+            <h3>Construcción en San Martín de Porres</h3>
+            <p>Consulta por trabajos de construcción y acabados para proyectos ubicados en San Martín de Porres.</p>
+            <a href="zonas/san-martin-de-porres.html">Ver información de San Martín de Porres →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">06</span>
+            <h3>Construcción en Villa El Salvador</h3>
+            <p>Revisa información sobre trabajos de remodelación, construcción y acabados en Villa El Salvador.</p>
+            <a href="zonas/villa-el-salvador.html">Ver información de Villa El Salvador →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">07</span>
+            <h3>Construcción en San Borja</h3>
+            <p>Consulta por proyectos de construcción, remodelación y acabados en San Borja.</p>
+            <a href="zonas/san-borja.html">Ver información de San Borja →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">08</span>
+            <h3>Construcción en Santiago de Surco</h3>
+            <p>Consulta por trabajos para viviendas y otros espacios ubicados en Santiago de Surco.</p>
+            <a href="zonas/santiago-de-surco.html">Ver información de Santiago de Surco →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">09</span>
+            <h3>Construcción en San Isidro</h3>
+            <p>Conversa con BURGA sobre los trabajos de construcción o acabados que necesitas en San Isidro.</p>
+            <a href="zonas/san-isidro.html">Ver información de San Isidro →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">10</span>
+            <h3>Construcción en Jesús María</h3>
+            <p>Consulta por servicios de construcción, remodelación y acabados para tu proyecto en Jesús María.</p>
+            <a href="zonas/jesus-maria.html">Ver información de Jesús María →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">11</span>
+            <h3>Construcción en La Molina</h3>
+            <p>Cuéntanos qué trabajo necesitas realizar en tu vivienda o espacio ubicado en La Molina.</p>
+            <a href="zonas/la-molina.html">Ver información de La Molina →</a>
+          </article>
+
+          <article class="zone-card">
+            <span class="zone-number">12</span>
+            <h3>Construcción en Breña</h3>
+            <p>Consulta por trabajos de remodelación, construcción y acabados para proyectos en Breña.</p>
+            <a href="zonas/brena.html">Ver información de Breña →</a>
+          </article>
+
+        </div>
+
+        <!-- OTROS DISTRITOS -->
+        <div class="zones-other-districts">
+          <h2>¿Te encuentras en otro distrito?</h2>
+          <p>
+            Cuéntanos en qué distrito se encuentra tu proyecto y qué trabajo necesitas.
+            Revisaremos tu consulta y coordinaremos los siguientes pasos.
+          </p>
+
+          <a
+            class="zones-button"
+            href="https://wa.me/51906469942?text=Hola%2C%20me%20encuentro%20en%20otro%20distrito%20y%20deseo%20consultar%20por%20un%20servicio%20de%20BURGA."
+            target="_blank"
+            rel="noopener noreferrer">Cotiza con nosotros por WhatsApp</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="zones-section zones-section-light">
+      <div class="zones-container">
+
+        <div class="zones-heading">
+          <span class="zones-eyebrow">Construcción y acabados</span>
+          <h2>Servicios que puedes consultar</h2>
+          <p>
+            Revisa nuestras páginas de servicios para conocer los trabajos
+            relacionados con tu proyecto.
+          </p>
+        </div>
+
+        <div class="zones-services">
+
+          <article class="zones-service-item">
+            <h3>Construcción de viviendas</h3>
+            <p>Información sobre proyectos de construcción residencial.</p>
+            <a href="servicios/construccion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="zones-service-item">
+            <h3>Remodelación de casas</h3>
+            <p>Opciones para renovar y mejorar diferentes espacios.</p>
+            <a href="servicios/remodelacion-de-casas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="zones-service-item">
+            <h3>Albañilería</h3>
+            <p>Trabajos de muros, reparaciones y albañilería general.</p>
+            <a href="servicios/albanileria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="zones-service-item">
+            <h3>Gasfitería</h3>
+            <p>Consulta por instalaciones y reparaciones sanitarias.</p>
+            <a href="servicios/gasfiteria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="zones-service-item">
+            <h3>Instalaciones eléctricas</h3>
+            <p>Información sobre trabajos eléctricos para viviendas y negocios.</p>
+            <a href="servicios/instalaciones-electricas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="zones-service-item">
+            <h3>Pisos y mayólicas</h3>
+            <p>Consulta por instalación de pisos y revestimientos.</p>
+            <a href="servicios/instalacion-de-pisos.html">Conocer servicio →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN ADICIONAL -->
+    <section class="zones-section">
+      <div class="zones-container zones-info">
+
+        <span class="zones-eyebrow">Antes de solicitar una cotización</span>
+        <h2>¿Qué información debes compartir?</h2>
+
+        <p>
+          Para orientar tu consulta, indica el distrito donde se encuentra
+          la obra, el tipo de trabajo que necesitas y las dimensiones
+          aproximadas del espacio.
+        </p>
+
+        <p>
+          Si cuentas con fotografías del área, también puedes compartirlas
+          para explicar mejor las características del proyecto. El alcance,
+          la disponibilidad y las condiciones del servicio deberán confirmarse
+          según cada caso.
+        </p>
+
+        <div class="zones-info-box">
+          <strong>Importante:</strong> esta página reúne los distritos para
+          los que tenemos páginas informativas o de consulta. La atención de
+          cada proyecto debe confirmarse directamente con BURGA antes de
+          coordinar los trabajos.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="zones-cta">
+      <div class="zones-container">
+
+        <h2>¿Tu proyecto está en Lima o Callao?</h2>
+
+        <p>
+          Escríbenos para consultar por el servicio que necesitas e indicarnos
+          dónde se encuentra tu obra.
+        </p>
+
+        <a
+          class="zones-button"
+          href="https://wa.me/51906469942?text=Hola%2C%20deseo%20consultar%20por%20un%20servicio%20de%20construcci%C3%B3n%20o%20acabados."
+          target="_blank"
+          rel="noopener noreferrer">Contactar a BURGA</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="zones-footer">
+    <p>Duo Grafico - todos los derechos reservados</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a
+    href="https://wa.me/51906469942"
+    class="zones-whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">WhatsApp</a>
+
+  <script>
+    (function () {
+      const menuButton = document.getElementById("menu-toggle");
+      const navigation = document.getElementById("menu-principal");
+      const dropdown = document.getElementById("services-dropdown");
+      const dropdownTrigger = dropdown.querySelector(".dropdown-trigger");
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("is-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Cerrar menú" : "Abrir menú"
+        );
+        menuButton.textContent = isOpen ? "✕" : "☰";
+      });
+
+      dropdownTrigger.addEventListener("click", function (event) {
+        if (window.innerWidth <= 900) {
+          event.preventDefault();
+
+          const isOpen = dropdown.classList.toggle("submenu-open");
+          dropdownTrigger.setAttribute("aria-expanded", String(isOpen));
+        }
+      });
+
+      navigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (window.innerWidth <= 900 && !link.classList.contains("dropdown-trigger")) {
+            navigation.classList.remove("is-open");
+            dropdown.classList.remove("submenu-open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Abrir menú");
+            menuButton.textContent = "☰";
+            dropdownTrigger.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 900) {
+          navigation.classList.remove("is-open");
+          dropdown.classList.remove("submenu-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.textContent = "☰";
+          dropdownTrigger.setAttribute("aria-expanded", "false");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

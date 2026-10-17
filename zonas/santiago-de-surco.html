@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en Santiago de Surco | BURGA</title>
+  <meta name="description" content="Construcción y remodelación en Santiago de Surco. Consulta por ampliaciones, albañilería, pisos, mayólicas y acabados con BURGA.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/santiago-de-surco.html">
+
+  <style>
+    :root {
+      --surco-navy: #102746;
+      --surco-blue: #183c67;
+      --surco-red: #e63946;
+      --surco-white: #ffffff;
+      --surco-light: #f4f7fb;
+      --surco-text: #26364a;
+      --surco-muted: #64748b;
+      --surco-border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--surco-text);
+      background: var(--surco-white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .surco-container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    /* CABECERA Y MENÚ */
+
+    .surco-header {
+      background: var(--surco-white);
+      box-shadow: 0 3px 15px rgba(16, 39, 70, 0.08);
+      position: relative;
+      z-index: 100;
+    }
+
+    .surco-header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .surco-logo img {
+      width: 190px;
+      max-height: 72px;
+      object-fit: contain;
+    }
+
+    .surco-menu-button {
+      display: none;
+      border: 0;
+      background: var(--surco-navy);
+      color: var(--surco-white);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .surco-nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .surco-nav > a,
+    .surco-dropdown-button {
+      color: var(--surco-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .surco-nav > a:hover,
+    .surco-dropdown-button:hover {
+      color: var(--surco-red);
+    }
+
+    .surco-dropdown {
+      position: relative;
+    }
+
+    .surco-dropdown-button {
+      border: 0;
+      background: transparent;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .surco-dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      max-height: 70vh;
+      overflow-y: auto;
+      padding: 10px;
+      background: var(--surco-white);
+      box-shadow: 0 8px 25px rgba(16, 39, 70, 0.15);
+      border-radius: 8px;
+    }
+
+    .surco-dropdown:hover .surco-dropdown-content,
+    .surco-dropdown:focus-within .surco-dropdown-content {
+      display: block;
+    }
+
+    .surco-dropdown-content a {
+      display: block;
+      padding: 9px 10px;
+      color: var(--surco-navy);
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .surco-dropdown-content a:hover {
+      background: var(--surco-light);
+      color: var(--surco-red);
+    }
+
+    .surco-menu-cotizar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 20px;
+      border-radius: 6px;
+      background: var(--surco-red);
+      color: var(--surco-white) !important;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .surco-menu-cotizar:hover {
+      background: #c92835;
+    }
+
+    /* PORTADA */
+
+    .surco-hero {
+      background: linear-gradient(
+        115deg,
+        rgba(16, 39, 70, 0.98),
+        rgba(24, 60, 103, 0.92)
+      );
+      color: var(--surco-white);
+      padding: 82px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .surco-hero::after {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border: 55px solid rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      right: -100px;
+      bottom: -180px;
+    }
+
+    .surco-hero-content {
+      max-width: 790px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .surco-eyebrow {
+      display: inline-block;
+      color: #ffd6db;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    .surco-hero h1 {
+      font-size: clamp(32px, 5vw, 49px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .surco-hero p {
+      max-width: 690px;
+      font-size: 17px;
+      color: #edf3fa;
+      margin-bottom: 28px;
+    }
+
+    .surco-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .surco-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 7px;
+      padding: 13px 21px;
+      font-weight: 700;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .surco-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .surco-btn-primary {
+      background: var(--surco-red);
+      color: var(--surco-white);
+    }
+
+    .surco-btn-primary:hover {
+      background: #c92835;
+    }
+
+    .surco-btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: var(--surco-white);
+    }
+
+    /* SECCIONES */
+
+    .surco-section {
+      padding: 70px 0;
+    }
+
+    .surco-section-light {
+      background: var(--surco-light);
+    }
+
+    .surco-section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .surco-section-heading h2 {
+      color: var(--surco-navy);
+      font-size: clamp(26px, 4vw, 35px);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .surco-section-heading p {
+      color: var(--surco-muted);
+    }
+
+    .surco-intro {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .surco-intro h2 {
+      color: var(--surco-navy);
+      font-size: 30px;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .surco-intro p {
+      margin-bottom: 14px;
+    }
+
+    .surco-panel {
+      padding: 30px;
+      border-left: 5px solid var(--surco-red);
+      border-radius: 8px;
+      background: var(--surco-white);
+      box-shadow: 0 8px 25px rgba(16, 39, 70, 0.07);
+    }
+
+    .surco-panel h3 {
+      color: var(--surco-navy);
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .surco-check-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .surco-check-list li {
+      position: relative;
+      padding-left: 27px;
+    }
+
+    .surco-check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--surco-red);
+      font-weight: 800;
+    }
+
+    /* SERVICIOS */
+
+    .surco-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .surco-card {
+      padding: 27px;
+      background: var(--surco-white);
+      border: 1px solid var(--surco-border);
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(16, 39, 70, 0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .surco-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(16, 39, 70, 0.09);
+    }
+
+    .surco-card-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: #fff0f1;
+      color: var(--surco-red);
+      border-radius: 9px;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .surco-card h3 {
+      color: var(--surco-navy);
+      font-size: 19px;
+      line-height: 1.35;
+      margin-bottom: 11px;
+    }
+
+    .surco-card p {
+      color: var(--surco-muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .surco-card-link {
+      color: var(--surco-red);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* PASOS */
+
+    .surco-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      counter-reset: surco-step;
+    }
+
+    .surco-step {
+      padding: 26px;
+      background: var(--surco-white);
+      border: 1px solid var(--surco-border);
+      border-radius: 9px;
+      counter-increment: surco-step;
+    }
+
+    .surco-step::before {
+      content: "0" counter(surco-step);
+      display: block;
+      color: var(--surco-red);
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .surco-step h3 {
+      color: var(--surco-navy);
+      margin-bottom: 9px;
+      font-size: 19px;
+    }
+
+    .surco-step p {
+      color: var(--surco-muted);
+      font-size: 14px;
+    }
+
+    .surco-info-box {
+      padding: 26px;
+      border-radius: 9px;
+      background: #fff7f7;
+      border: 1px solid #ffd9dd;
+      margin-top: 28px;
+    }
+
+    .surco-info-box h3 {
+      color: var(--surco-navy);
+      margin-bottom: 10px;
+    }
+
+    /* PREGUNTAS FRECUENTES */
+
+    .surco-faq {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .surco-faq-item {
+      padding: 21px 23px;
+      margin-bottom: 13px;
+      background: var(--surco-white);
+      border: 1px solid var(--surco-border);
+      border-radius: 8px;
+    }
+
+    .surco-faq-item h3 {
+      color: var(--surco-navy);
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .surco-faq-item p {
+      color: var(--surco-muted);
+      font-size: 15px;
+    }
+
+    /* CTA Y PIE DE PÁGINA */
+
+    .surco-cta {
+      padding: 65px 0;
+      background: var(--surco-navy);
+      color: var(--surco-white);
+      text-align: center;
+    }
+
+    .surco-cta h2 {
+      font-size: clamp(27px, 4vw, 36px);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .surco-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e6edf6;
+    }
+
+    .surco-footer {
+      padding: 28px 0;
+      background: #0b1c32;
+      color: #d8e0ea;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .surco-footer p + p {
+      margin-top: 7px;
+    }
+
+    .surco-footer a {
+      color: var(--surco-white);
+    }
+
+    .surco-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      background: #25d366;
+      color: var(--surco-white);
+      border-radius: 50%;
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .surco-menu-button {
+        display: block;
+      }
+
+      .surco-header-inner {
+        min-height: 78px;
+      }
+
+      .surco-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px 4%;
+        background: var(--surco-white);
+        box-shadow: 0 12px 18px rgba(16, 39, 70, 0.12);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        max-height: 75vh;
+        overflow-y: auto;
+      }
+
+      .surco-nav.surco-open {
+        display: flex;
+      }
+
+      .surco-nav > a,
+      .surco-dropdown-button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 5px;
+      }
+
+      .surco-dropdown-content {
+        display: none;
+        position: static;
+        max-height: none;
+        overflow: visible;
+        box-shadow: none;
+        background: var(--surco-light);
+        margin-bottom: 8px;
+      }
+
+      .surco-dropdown.surco-dropdown-open .surco-dropdown-content {
+        display: block;
+      }
+
+      .surco-menu-cotizar {
+        width: 100%;
+        margin-top: 8px;
+        text-align: center;
+      }
+
+      .surco-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .surco-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .surco-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .surco-logo img {
+        width: 155px;
+      }
+
+      .surco-hero {
+        padding: 60px 0;
+      }
+
+      .surco-hero p {
+        font-size: 15px;
+      }
+
+      .surco-actions {
+        flex-direction: column;
+      }
+
+      .surco-btn {
+        width: 100%;
+      }
+
+      .surco-section {
+        padding: 52px 0;
+      }
+
+      .surco-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .surco-card,
+      .surco-panel {
+        padding: 23px;
+      }
+
+      .surco-whatsapp-float {
+        width: 52px;
+        height: 52px;
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="surco-header">
+    <div class="surco-container surco-header-inner">
+
+      <a class="surco-logo" href="../index.html" aria-label="BURGA - Inicio">
+        <img
+          src="../imagenes/logo/logo-burga.webp"
+          alt="BURGA Construcciones y Acabados"
+          width="190"
+          height="72">
+      </a>
+
+      <button
+        class="surco-menu-button"
+        id="surco-menu-button"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="surco-navigation">☰</button>
+
+      <nav class="surco-nav" id="surco-navigation" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../proyectos.html">Proyectos</a>
+
+        <div class="surco-dropdown" id="surco-services-dropdown">
+          <button
+            class="surco-dropdown-button"
+            type="button"
+            aria-expanded="false">
+            Servicios ▾
+          </button>
+
+          <div class="surco-dropdown-content">
+            <a href="../servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="../servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="../servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="../servicios/albanileria.html">Albañilería</a>
+            <a href="../servicios/construccion-de-muros.html">Construcción de muros</a>
+            <a href="../servicios/columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="../servicios/techos-aligerados.html">Techos aligerados</a>
+            <a href="../servicios/tarrajeo.html">Tarrajeo</a>
+            <a href="../servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="../servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="../servicios/pisos-de-concreto.html">Pisos de concreto</a>
+            <a href="../servicios/gasfiteria.html">Gasfitería</a>
+            <a href="../servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="../servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+          </div>
+        </div>
+
+        <a href="../zonas-de-atencion.html">Zonas de atención</a>
+        <a href="../contacto.html">Contacto</a>
+
+        <a
+          class="surco-menu-cotizar"
+          href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto%20en%20Santiago%20de%20Surco."
+          target="_blank"
+          rel="noopener noreferrer">Cotizar</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="surco-hero">
+      <div class="surco-container">
+        <div class="surco-hero-content">
+          <span class="surco-eyebrow">Construcción y acabados en Lima y Callao</span>
+
+          <h1>Construcción y remodelación en Santiago de Surco</h1>
+
+          <p>
+            ¿Estás pensando en renovar tu casa, departamento o negocio en
+            Santiago de Surco? En BURGA puedes consultar por trabajos de
+            construcción, ampliación, remodelación y acabados según las
+            características de tu proyecto.
+          </p>
+
+          <div class="surco-actions">
+            <a
+              class="surco-btn surco-btn-primary"
+              href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quiero%20consultar%20por%20un%20proyecto%20en%20Santiago%20de%20Surco."
+              target="_blank"
+              rel="noopener noreferrer">Cotizar por WhatsApp</a>
+
+            <a class="surco-btn surco-btn-outline" href="#surco-servicios">
+              Ver servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surco-section">
+      <div class="surco-container surco-intro">
+
+        <div>
+          <h2>Soluciones de construcción para proyectos en Santiago de Surco</h2>
+
+          <p>
+            Cada vivienda y espacio comercial tiene necesidades distintas.
+            Antes de iniciar una obra, conviene definir los ambientes que
+            deseas mejorar, las condiciones actuales del inmueble y los
+            acabados que tienes en mente.
+          </p>
+
+          <p>
+            Si estás organizando una remodelación, quieres ampliar ambientes
+            o necesitas renovar pisos, paredes o instalaciones, puedes
+            consultar por los servicios de BURGA Construcciones &amp; Acabados.
+          </p>
+
+          <p>
+            Para comenzar, comparte la ubicación aproximada, el tipo de
+            trabajo y las medidas o fotografías que tengas disponibles.
+            Así podrás explicar mejor lo que necesitas para tu proyecto.
+          </p>
+        </div>
+
+        <aside class="surco-panel">
+          <h3>Trabajos que puedes consultar</h3>
+
+          <ul class="surco-check-list">
+            <li>Construcción y ampliación de viviendas.</li>
+            <li>Remodelación de casas y departamentos.</li>
+            <li>Albañilería y construcción de muros.</li>
+            <li>Tarrajeo y trabajos de acabados.</li>
+            <li>Instalación de pisos y mayólicas.</li>
+            <li>Gasfitería e instalaciones eléctricas.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="surco-section surco-section-light" id="surco-servicios">
+      <div class="surco-container">
+
+        <div class="surco-section-heading">
+          <h2>Servicios de construcción en Santiago de Surco</h2>
+          <p>
+            Conoce las principales categorías de trabajo y revisa los detalles
+            de cada servicio antes de definir tu proyecto.
+          </p>
+        </div>
+
+        <div class="surco-grid">
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">⌂</div>
+            <h3>Construcción de viviendas</h3>
+            <p>
+              Consulta por proyectos residenciales según las características
+              del terreno y las necesidades de construcción.
+            </p>
+            <a class="surco-card-link" href="../servicios/construccion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">↗</div>
+            <h3>Ampliación de viviendas</h3>
+            <p>
+              Evalúa alternativas para incorporar ambientes y aprovechar
+              mejor los espacios de tu propiedad.
+            </p>
+            <a class="surco-card-link" href="../servicios/ampliacion-de-viviendas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▦</div>
+            <h3>Remodelación de casas</h3>
+            <p>
+              Organiza la renovación de ambientes y la actualización de
+              los acabados de tu vivienda o negocio.
+            </p>
+            <a class="surco-card-link" href="../servicios/remodelacion-de-casas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▤</div>
+            <h3>Albañilería y muros</h3>
+            <p>
+              Consulta por construcción de muros, divisiones, reparaciones
+              y otros trabajos de albañilería.
+            </p>
+            <a class="surco-card-link" href="../servicios/albanileria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">◫</div>
+            <h3>Instalación de pisos</h3>
+            <p>
+              Consulta por instalación de cerámicos, porcelanato y otros
+              revestimientos para pisos.
+            </p>
+            <a class="surco-card-link" href="../servicios/instalacion-de-pisos.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▧</div>
+            <h3>Instalación de mayólicas</h3>
+            <p>
+              Revisa opciones de revestimiento para baños, cocinas,
+              paredes y otras superficies.
+            </p>
+            <a class="surco-card-link" href="../servicios/instalacion-de-mayolicas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">⌁</div>
+            <h3>Gasfitería</h3>
+            <p>
+              Consulta por tuberías, griferías, sanitarios y revisión
+              de instalaciones de agua.
+            </p>
+            <a class="surco-card-link" href="../servicios/gasfiteria.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">ϟ</div>
+            <h3>Instalaciones eléctricas</h3>
+            <p>
+              Consulta por cableado, iluminación, tomacorrientes y revisión
+              de instalaciones eléctricas.
+            </p>
+            <a class="surco-card-link" href="../servicios/instalaciones-electricas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▱</div>
+            <h3>Tarrajeo y acabados</h3>
+            <p>
+              Consulta por preparación y revestimiento de paredes,
+              techos y otras superficies.
+            </p>
+            <a class="surco-card-link" href="../servicios/tarrajeo.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▰</div>
+            <h3>Pisos de concreto</h3>
+            <p>
+              Consulta por trabajos de concreto según las dimensiones
+              y el uso previsto de la superficie.
+            </p>
+            <a class="surco-card-link" href="../servicios/pisos-de-concreto.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▥</div>
+            <h3>Columnas y vigas</h3>
+            <p>
+              Consulta por trabajos estructurales que requieren
+              evaluación técnica y planificación previa.
+            </p>
+            <a class="surco-card-link" href="../servicios/columnas-y-vigas.html">Conocer servicio →</a>
+          </article>
+
+          <article class="surco-card">
+            <div class="surco-card-icon" aria-hidden="true">▱</div>
+            <h3>Techos aligerados</h3>
+            <p>
+              Consulta por trabajos de losas y techos aligerados según
+              las características de la obra.
+            </p>
+            <a class="surco-card-link" href="../servicios/techos-aligerados.html">Conocer servicio →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="surco-section">
+      <div class="surco-container">
+
+        <div class="surco-section-heading">
+          <h2>¿Cómo solicitar una cotización para tu obra?</h2>
+          <p>
+            Comparte la información inicial para evaluar las necesidades
+            de tu proyecto en Santiago de Surco.
+          </p>
+        </div>
+
+        <div class="surco-steps">
+
+          <article class="surco-step">
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>
+              Indica si deseas construir, ampliar, remodelar o realizar
+              un trabajo específico de acabados.
+            </p>
+          </article>
+
+          <article class="surco-step">
+            <h3>Comparte los detalles</h3>
+            <p>
+              Señala la ubicación aproximada, las dimensiones disponibles
+              y, si tienes, fotografías del área.
+            </p>
+          </article>
+
+          <article class="surco-step">
+            <h3>Coordina los siguientes pasos</h3>
+            <p>
+              Revisa el alcance, los materiales y las condiciones de
+              ejecución necesarias para preparar una cotización.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="surco-info-box">
+          <h3>Consideraciones técnicas antes de construir</h3>
+          <p>
+            Las ampliaciones de pisos y las modificaciones de columnas,
+            vigas u otros elementos estructurales requieren evaluación
+            técnica previa. Según las características de la obra, pueden
+            corresponder profesionales habilitados y permisos municipales.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="surco-section surco-section-light">
+      <div class="surco-container">
+
+        <div class="surco-section-heading">
+          <h2>Preguntas frecuentes sobre construcción en Santiago de Surco</h2>
+          <p>Información útil para organizar tu proyecto.</p>
+        </div>
+
+        <div class="surco-faq">
+
+          <article class="surco-faq-item">
+            <h3>¿Qué servicios puedo consultar en Santiago de Surco?</h3>
+            <p>
+              Puedes consultar por construcción de viviendas, ampliaciones,
+              remodelaciones, albañilería, tarrajeo, pisos, mayólicas,
+              gasfitería e instalaciones eléctricas.
+            </p>
+          </article>
+
+          <article class="surco-faq-item">
+            <h3>¿Cómo solicito una cotización?</h3>
+            <p>
+              Escríbenos por WhatsApp e indica qué trabajo necesitas,
+              la ubicación aproximada y las características del espacio.
+              El costo dependerá del alcance y las condiciones del proyecto.
+            </p>
+          </article>
+
+          <article class="surco-faq-item">
+            <h3>¿Puedo consultar antes de tener un diseño terminado?</h3>
+            <p>
+              Sí. Puedes compartir tu idea inicial y los detalles que tengas
+              para identificar qué información conviene reunir antes de
+              definir el proyecto.
+            </p>
+          </article>
+
+          <article class="surco-faq-item">
+            <h3>¿De qué depende el costo de una remodelación?</h3>
+            <p>
+              Depende de las dimensiones, el estado actual del inmueble,
+              los materiales, los acabados y la complejidad de los trabajos.
+            </p>
+          </article>
+
+          <article class="surco-faq-item">
+            <h3>¿Necesito una evaluación técnica para ampliar mi vivienda?</h3>
+            <p>
+              Cuando una ampliación afecta la estructura o incorpora nuevos
+              pisos, se debe evaluar la seguridad de la edificación y los
+              requisitos técnicos y municipales aplicables.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="surco-cta">
+      <div class="surco-container">
+        <h2>¿Tienes un proyecto en Santiago de Surco?</h2>
+
+        <p>
+          Cuéntanos qué deseas construir, ampliar o remodelar. Comparte
+          los detalles de tu proyecto y consulta los siguientes pasos
+          con BURGA Construcciones &amp; Acabados.
+        </p>
+
+        <a
+          class="surco-btn surco-btn-primary"
+          href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20deseo%20cotizar%20un%20proyecto%20en%20Santiago%20de%20Surco."
+          target="_blank"
+          rel="noopener noreferrer">Cotizar por WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="surco-footer">
+    <div class="surco-container">
+      <p><strong>BURGA Construcciones &amp; Acabados</strong></p>
+      <p>Servicios de construcción y acabados en Lima Metropolitana y Callao.</p>
+      <p>
+        <a href="../zonas-de-atencion.html">Zonas de atención</a> |
+        <a href="../contacto.html">Contacto</a>
+      </p>
+      <p>Duo Grafico - todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <a
+    class="surco-whatsapp-float"
+    href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20hacer%20una%20consulta%20sobre%20un%20proyecto%20en%20Santiago%20de%20Surco."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a BURGA por WhatsApp">WA</a>
+
+  <script>
+    (function () {
+      const menuButton = document.getElementById("surco-menu-button");
+      const navigation = document.getElementById("surco-navigation");
+      const servicesDropdown = document.getElementById("surco-services-dropdown");
+      const servicesButton = servicesDropdown.querySelector(".surco-dropdown-button");
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("surco-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Cerrar menú" : "Abrir menú"
+        );
+        menuButton.textContent = isOpen ? "✕" : "☰";
+      });
+
+      servicesButton.addEventListener("click", function () {
+        const isOpen = servicesDropdown.classList.toggle("surco-dropdown-open");
+        servicesButton.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (window.innerWidth <= 950) {
+            navigation.classList.remove("surco-open");
+            servicesDropdown.classList.remove("surco-dropdown-open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Abrir menú");
+            menuButton.textContent = "☰";
+            servicesButton.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

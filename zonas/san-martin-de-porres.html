@@ -1,0 +1,1085 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Construcción y Remodelación en San Martín de Porres | BURGA</title>
+
+  <meta name="description" content="Servicios de construcción y remodelación en San Martín de Porres. Albañilería, ampliaciones, pisos, gasfitería y acabados para viviendas y negocios.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102746">
+  <link rel="canonical" href="https://construccionesburga.com/zonas/san-martin-de-porres.html">
+
+  <style>
+    :root {
+      --smp-navy: #102746;
+      --smp-blue: #183c67;
+      --smp-red: #e63946;
+      --smp-white: #ffffff;
+      --smp-light: #f4f7fb;
+      --smp-text: #26364a;
+      --smp-muted: #64748b;
+      --smp-border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--smp-text);
+      line-height: 1.65;
+      background: var(--smp-white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .smp-container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    .smp-header {
+      background: var(--smp-white);
+      box-shadow: 0 3px 15px rgba(16, 39, 70, 0.08);
+      position: relative;
+      z-index: 100;
+    }
+
+    .smp-header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .smp-logo img {
+      width: 190px;
+      max-height: 72px;
+      object-fit: contain;
+    }
+
+    .smp-menu-button {
+      display: none;
+      border: 0;
+      background: var(--smp-navy);
+      color: var(--smp-white);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .smp-nav {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    .smp-nav a,
+    .smp-dropdown-button {
+      color: var(--smp-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .smp-nav a:hover,
+    .smp-dropdown-button:hover {
+      color: var(--smp-red);
+    }
+
+    .smp-dropdown {
+      position: relative;
+    }
+
+    .smp-dropdown-button {
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .smp-dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 245px;
+      max-height: 70vh;
+      overflow-y: auto;
+      background: var(--smp-white);
+      box-shadow: 0 8px 25px rgba(16, 39, 70, 0.15);
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .smp-dropdown:hover .smp-dropdown-content,
+    .smp-dropdown:focus-within .smp-dropdown-content {
+      display: block;
+    }
+
+    .smp-dropdown-content a {
+      display: block;
+      padding: 9px 10px;
+      border-radius: 5px;
+    }
+
+    .smp-dropdown-content a:hover {
+      background: var(--smp-light);
+    }
+
+    .smp-hero {
+      background:
+        linear-gradient(115deg, rgba(16, 39, 70, 0.97), rgba(24, 60, 103, 0.91));
+      color: var(--smp-white);
+      padding: 82px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .smp-hero::after {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border: 55px solid rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      right: -100px;
+      bottom: -180px;
+    }
+
+    .smp-hero-content {
+      max-width: 780px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .smp-eyebrow {
+      display: inline-block;
+      color: #ffd6db;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    .smp-hero h1 {
+      font-size: clamp(32px, 5vw, 49px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .smp-hero p {
+      font-size: 17px;
+      max-width: 690px;
+      color: #edf3fa;
+      margin-bottom: 28px;
+    }
+
+    .smp-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .smp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 7px;
+      padding: 13px 21px;
+      font-weight: 700;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .smp-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .smp-btn-primary {
+      color: var(--smp-white);
+      background: var(--smp-red);
+    }
+
+    .smp-btn-primary:hover {
+      background: #c92835;
+    }
+
+    .smp-btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: var(--smp-white);
+    }
+
+    .smp-section {
+      padding: 70px 0;
+    }
+
+    .smp-section-light {
+      background: var(--smp-light);
+    }
+
+    .smp-section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .smp-section-heading h2 {
+      color: var(--smp-navy);
+      font-size: clamp(26px, 4vw, 35px);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .smp-section-heading p {
+      color: var(--smp-muted);
+    }
+
+    .smp-intro {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .smp-intro h2 {
+      color: var(--smp-navy);
+      font-size: 30px;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .smp-intro p {
+      margin-bottom: 14px;
+    }
+
+    .smp-intro-panel {
+      padding: 30px;
+      border-left: 5px solid var(--smp-red);
+      border-radius: 8px;
+      background: var(--smp-white);
+      box-shadow: 0 8px 25px rgba(16, 39, 70, 0.07);
+    }
+
+    .smp-intro-panel h3 {
+      color: var(--smp-navy);
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .smp-check-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .smp-check-list li {
+      position: relative;
+      padding-left: 27px;
+    }
+
+    .smp-check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--smp-red);
+      font-weight: 800;
+    }
+
+    .smp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .smp-card {
+      background: var(--smp-white);
+      padding: 27px;
+      border: 1px solid var(--smp-border);
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(16, 39, 70, 0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .smp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(16, 39, 70, 0.09);
+    }
+
+    .smp-card-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: #fff0f1;
+      color: var(--smp-red);
+      border-radius: 9px;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .smp-card h3 {
+      color: var(--smp-navy);
+      font-size: 19px;
+      line-height: 1.35;
+      margin-bottom: 11px;
+    }
+
+    .smp-card p {
+      color: var(--smp-muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .smp-card-link {
+      color: var(--smp-red);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .smp-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      counter-reset: smp-step;
+    }
+
+    .smp-step {
+      background: var(--smp-white);
+      border: 1px solid var(--smp-border);
+      border-radius: 9px;
+      padding: 26px;
+      counter-increment: smp-step;
+    }
+
+    .smp-step::before {
+      content: "0" counter(smp-step);
+      display: block;
+      color: var(--smp-red);
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .smp-step h3 {
+      color: var(--smp-navy);
+      margin-bottom: 9px;
+      font-size: 19px;
+    }
+
+    .smp-step p {
+      color: var(--smp-muted);
+      font-size: 14px;
+    }
+
+    .smp-info-box {
+      padding: 26px;
+      border-radius: 9px;
+      background: #fff7f7;
+      border: 1px solid #ffd9dd;
+      margin-top: 28px;
+    }
+
+    .smp-info-box h3 {
+      color: var(--smp-navy);
+      margin-bottom: 10px;
+    }
+
+    .smp-info-box p {
+      color: var(--smp-text);
+    }
+
+    .smp-faq {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .smp-faq-item {
+      background: var(--smp-white);
+      border: 1px solid var(--smp-border);
+      border-radius: 8px;
+      padding: 21px 23px;
+      margin-bottom: 13px;
+    }
+
+    .smp-faq-item h3 {
+      color: var(--smp-navy);
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .smp-faq-item p {
+      color: var(--smp-muted);
+      font-size: 15px;
+    }
+
+    .smp-cta {
+      padding: 65px 0;
+      background: var(--smp-navy);
+      color: var(--smp-white);
+      text-align: center;
+    }
+
+    .smp-cta h2 {
+      font-size: clamp(27px, 4vw, 36px);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .smp-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e6edf6;
+    }
+
+    .smp-footer {
+      background: #0b1c32;
+      color: #d8e0ea;
+      padding: 28px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .smp-footer p + p {
+      margin-top: 7px;
+    }
+
+    .smp-footer a {
+      color: var(--smp-white);
+    }
+
+    .smp-whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 90;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      background: #25d366;
+      color: var(--smp-white);
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 950px) {
+      .smp-menu-button {
+        display: block;
+      }
+
+      .smp-header-inner {
+        min-height: 78px;
+      }
+
+      .smp-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--smp-white);
+        padding: 15px 4%;
+        box-shadow: 0 12px 18px rgba(16, 39, 70, 0.12);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        max-height: 75vh;
+        overflow-y: auto;
+      }
+
+      .smp-nav.smp-open {
+        display: flex;
+      }
+
+      .smp-nav > a,
+      .smp-dropdown-button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 5px;
+      }
+
+      .smp-dropdown-content {
+        display: none;
+        position: static;
+        max-height: none;
+        overflow: visible;
+        box-shadow: none;
+        background: var(--smp-light);
+        margin: 0 0 8px;
+      }
+
+      .smp-dropdown.smp-dropdown-open .smp-dropdown-content {
+        display: block;
+      }
+
+      .smp-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .smp-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .smp-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .smp-logo img {
+        width: 155px;
+      }
+
+      .smp-hero {
+        padding: 60px 0;
+      }
+
+      .smp-hero p {
+        font-size: 15px;
+      }
+
+      .smp-actions {
+        flex-direction: column;
+      }
+
+      .smp-btn {
+        width: 100%;
+      }
+
+      .smp-section {
+        padding: 52px 0;
+      }
+
+      .smp-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .smp-card {
+        padding: 23px;
+      }
+
+      .smp-intro-panel {
+        padding: 23px;
+      }
+
+      .smp-whatsapp-float {
+        width: 52px;
+        height: 52px;
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+
+    
+.smp-menu-cotizar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 17px;
+  border-radius: 6px;
+  background: #e63946;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.smp-menu-cotizar:hover {
+  background: #c92835;
+  color: #ffffff !important;
+}
+
+@media (max-width: 950px) {
+  .smp-menu-cotizar {
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header class="smp-header">
+    <div class="smp-container smp-header-inner">
+
+      <a class="smp-logo" href="../index.html" aria-label="BURGA Construcciones y Acabados - Inicio">
+        <img src="../imagenes/logo/logo-burga.webp"
+             alt="BURGA Construcciones y Acabados"
+             width="190"
+             height="72">
+      </a>
+
+      <button class="smp-menu-button"
+              id="smp-menu-button"
+              type="button"
+              aria-label="Abrir menú"
+              aria-expanded="false"
+              aria-controls="smp-navigation">
+        ☰
+      </button>
+
+      <nav class="smp-nav" id="smp-navigation" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../proyectos.html">Proyectos</a>
+
+        <div class="smp-dropdown" id="smp-services-dropdown">
+          <button class="smp-dropdown-button"
+                  type="button"
+                  aria-expanded="false">
+            Servicios ▾
+          </button>
+
+          <div class="smp-dropdown-content">
+            <a href="../servicios/construccion-de-viviendas.html">Construcción de viviendas</a>
+            <a href="../servicios/ampliacion-de-viviendas.html">Ampliación de viviendas</a>
+            <a href="../servicios/remodelacion-de-casas.html">Remodelación de casas</a>
+            <a href="../servicios/albanileria.html">Albañilería</a>
+            <a href="../servicios/construccion-de-muros.html">Construcción de muros</a>
+            <a href="../servicios/columnas-y-vigas.html">Columnas y vigas</a>
+            <a href="../servicios/techos-aligerados.html">Techos aligerados</a>
+            <a href="../servicios/tarrajeo.html">Tarrajeo</a>
+            <a href="../servicios/instalacion-de-mayolicas.html">Instalación de mayólicas</a>
+            <a href="../servicios/instalacion-de-pisos.html">Instalación de pisos</a>
+            <a href="../servicios/pisos-de-concreto.html">Pisos de concreto</a>
+            <a href="../servicios/gasfiteria.html">Gasfitería</a>
+            <a href="../servicios/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="../servicios/nivelacion-de-terrenos.html">Nivelación de terrenos</a>
+          </div>
+        </div>
+
+        <a href="../zonas-de-atencion.html">Zonas de atención</a>
+        <a href="../contacto.html">Contacto</a>
+
+        
+<a href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20cotizar%20un%20proyecto."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="smp-menu-cotizar">
+  Cotizar
+</a>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="smp-hero">
+      <div class="smp-container">
+        <div class="smp-hero-content">
+          <span class="smp-eyebrow">Construcción y acabados en Lima</span>
+
+          <h1>Construcción y remodelación en San Martín de Porres</h1>
+
+          <p>
+            ¿Estás pensando en construir, ampliar o renovar tu vivienda o negocio
+            en San Martín de Porres? En BURGA te orientamos para organizar tu
+            proyecto, evaluar tus necesidades y consultar por los trabajos que requieres.
+          </p>
+
+          <div class="smp-actions">
+            <a class="smp-btn smp-btn-primary"
+               href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n%20o%20remodelaci%C3%B3n%20en%20San%20Mart%C3%ADn%20de%20Porres."
+               target="_blank"
+               rel="noopener noreferrer">
+              Consultar por WhatsApp
+            </a>
+
+            <a class="smp-btn smp-btn-outline" href="#smp-servicios">
+              Ver servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="smp-section">
+      <div class="smp-container smp-intro">
+
+        <div>
+          <h2>Soluciones para tu proyecto en San Martín de Porres</h2>
+
+          <p>
+            Cada vivienda y negocio tiene necesidades diferentes. Por eso, antes
+            de iniciar una obra, es importante definir qué trabajos se necesitan,
+            las condiciones del espacio y el alcance del proyecto.
+          </p>
+
+          <p>
+            En BURGA Construcciones &amp; Acabados puedes consultar por trabajos
+            de albañilería, remodelación, ampliación de ambientes, instalación de
+            pisos y otros servicios relacionados con la construcción.
+          </p>
+
+          <p>
+            Cuéntanos qué deseas realizar en San Martín de Porres y comparte
+            algunos detalles para evaluar los siguientes pasos.
+          </p>
+        </div>
+
+        <aside class="smp-intro-panel">
+          <h3>¿Qué puedes consultar?</h3>
+
+          <ul class="smp-check-list">
+            <li>Construcción y ampliación de viviendas.</li>
+            <li>Remodelación de cocinas, baños y otros ambientes.</li>
+            <li>Trabajos de albañilería y tarrajeo.</li>
+            <li>Instalación de pisos y mayólicas.</li>
+            <li>Gasfitería e instalaciones eléctricas.</li>
+            <li>Orientación inicial sobre tu proyecto.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="smp-section smp-section-light" id="smp-servicios">
+      <div class="smp-container">
+
+        <div class="smp-section-heading">
+          <h2>Nuestros servicios en San Martín de Porres</h2>
+          <p>
+            Conoce algunas de las soluciones que puedes consultar para tu
+            vivienda, terreno o negocio en este distrito de Lima.
+          </p>
+        </div>
+
+        <div class="smp-grid">
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">⌂</div>
+            <h3>Construcción de viviendas</h3>
+            <p>
+              Consulta por la planificación y ejecución de trabajos para tu
+              proyecto de vivienda, según las condiciones del terreno y el diseño.
+            </p>
+            <a class="smp-card-link" href="../servicios/construccion-de-viviendas.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">↗</div>
+            <h3>Ampliación de viviendas</h3>
+            <p>
+              Evalúa opciones para incorporar nuevos ambientes o aprovechar
+              mejor los espacios existentes de tu vivienda.
+            </p>
+            <a class="smp-card-link" href="../servicios/ampliacion-de-viviendas.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">▦</div>
+            <h3>Remodelación de casas</h3>
+            <p>
+              Renueva ambientes y organiza los trabajos necesarios para mejorar
+              la distribución y los acabados de tu propiedad.
+            </p>
+            <a class="smp-card-link" href="../servicios/remodelacion-de-casas.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">▤</div>
+            <h3>Albañilería y muros</h3>
+            <p>
+              Consulta por levantamiento de muros, divisiones, reparaciones
+              y otros trabajos de albañilería.
+            </p>
+            <a class="smp-card-link" href="../servicios/albanileria.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">◫</div>
+            <h3>Pisos y mayólicas</h3>
+            <p>
+              Revisa alternativas de instalación de revestimientos para pisos,
+              paredes, baños, cocinas y otros ambientes.
+            </p>
+            <a class="smp-card-link" href="../servicios/instalacion-de-mayolicas.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">⌁</div>
+            <h3>Gasfitería</h3>
+            <p>
+              Consulta por trabajos relacionados con tuberías, griferías,
+              sanitarios y revisión de instalaciones de agua.
+            </p>
+            <a class="smp-card-link" href="../servicios/gasfiteria.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">ϟ</div>
+            <h3>Instalaciones eléctricas</h3>
+            <p>
+              Consulta por cableado, iluminación, tomacorrientes y revisión
+              de instalaciones eléctricas de tu propiedad.
+            </p>
+            <a class="smp-card-link" href="../servicios/instalaciones-electricas.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">▱</div>
+            <h3>Tarrajeo y acabados</h3>
+            <p>
+              Evalúa trabajos de preparación y revestimiento de paredes,
+              techos y otras superficies.
+            </p>
+            <a class="smp-card-link" href="../servicios/tarrajeo.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+          <article class="smp-card">
+            <div class="smp-card-icon" aria-hidden="true">▰</div>
+            <h3>Pisos de concreto</h3>
+            <p>
+              Consulta por preparación y ejecución de pisos de concreto,
+              considerando el uso previsto y las características del espacio.
+            </p>
+            <a class="smp-card-link" href="../servicios/pisos-de-concreto.html">
+              Conocer servicio →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="smp-section">
+      <div class="smp-container">
+
+        <div class="smp-section-heading">
+          <h2>¿Cómo consultar por tu proyecto?</h2>
+          <p>
+            Comparte la información básica para ayudarnos a entender qué
+            necesitas en San Martín de Porres.
+          </p>
+        </div>
+
+        <div class="smp-steps">
+
+          <article class="smp-step">
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>
+              Indica si buscas construir, ampliar, remodelar o realizar un
+              trabajo específico de acabados o instalaciones.
+            </p>
+          </article>
+
+          <article class="smp-step">
+            <h3>Comparte los detalles</h3>
+            <p>
+              Señala la ubicación aproximada, las características del espacio
+              y, si tienes, fotografías o medidas de referencia.
+            </p>
+          </article>
+
+          <article class="smp-step">
+            <h3>Coordina la evaluación</h3>
+            <p>
+              Revisa el alcance del trabajo, las condiciones de ejecución y
+              los siguientes pasos para solicitar una cotización.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="smp-info-box">
+          <h3>Importante antes de iniciar una obra</h3>
+          <p>
+            Las ampliaciones de pisos, modificaciones estructurales y otros
+            trabajos que puedan afectar la seguridad de una edificación
+            requieren una evaluación técnica previa y, cuando corresponda,
+            la intervención de profesionales habilitados y los permisos
+            aplicables.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="smp-section smp-section-light">
+      <div class="smp-container">
+
+        <div class="smp-section-heading">
+          <h2>Preguntas frecuentes sobre construcción en San Martín de Porres</h2>
+          <p>
+            Respuestas a consultas habituales antes de organizar un proyecto.
+          </p>
+        </div>
+
+        <div class="smp-faq">
+
+          <article class="smp-faq-item">
+            <h3>¿Qué servicios de construcción puedo consultar?</h3>
+            <p>
+              Puedes consultar por construcción de viviendas, ampliaciones,
+              remodelaciones, albañilería, tarrajeo, pisos, mayólicas,
+              gasfitería e instalaciones eléctricas.
+            </p>
+          </article>
+
+          <article class="smp-faq-item">
+            <h3>¿Cómo puedo solicitar una cotización?</h3>
+            <p>
+              Escríbenos por WhatsApp e indica el tipo de trabajo, la ubicación
+              aproximada y las características del espacio. La cotización
+              dependerá del alcance y las condiciones del proyecto.
+            </p>
+          </article>
+
+          <article class="smp-faq-item">
+            <h3>¿El costo depende del tamaño del trabajo?</h3>
+            <p>
+              Sí. El costo puede variar según las dimensiones, los materiales,
+              el estado actual de la propiedad, la complejidad y las
+              condiciones de ejecución.
+            </p>
+          </article>
+
+          <article class="smp-faq-item">
+            <h3>¿Puedo consultar si todavía estoy planificando mi obra?</h3>
+            <p>
+              Sí. Puedes compartir tu idea inicial para conocer qué información
+              conviene reunir antes de definir el alcance del proyecto.
+            </p>
+          </article>
+
+          <article class="smp-faq-item">
+            <h3>¿Cómo sé si necesito una evaluación técnica?</h3>
+            <p>
+              Si el trabajo implica columnas, vigas, techos, ampliaciones
+              estructurales o cambios importantes en la edificación, es
+              necesario evaluar las condiciones técnicas y los requisitos
+              aplicables antes de comenzar.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="smp-cta">
+      <div class="smp-container">
+        <h2>¿Tienes un proyecto en San Martín de Porres?</h2>
+
+        <p>
+          Cuéntanos qué deseas construir, ampliar o remodelar. Comparte los
+          detalles de tu proyecto y consulta los siguientes pasos con BURGA
+          Construcciones &amp; Acabados.
+        </p>
+
+        <a class="smp-btn smp-btn-primary"
+           href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20deseo%20consultar%20por%20un%20proyecto%20en%20San%20Mart%C3%ADn%20de%20Porres."
+           target="_blank"
+           rel="noopener noreferrer">
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="smp-footer">
+    <div class="smp-container">
+      <p>
+        <strong>BURGA Construcciones &amp; Acabados</strong>
+      </p>
+      <p>Servicios de construcción y acabados en Lima Metropolitana y Callao.</p>
+      <p>
+        <a href="../zonas-de-atencion.html">Zonas de atención</a> |
+        <a href="../contacto.html">Contacto</a>
+      </p>
+      <p>Duo Grafico - todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <a class="smp-whatsapp-float"
+     href="https://wa.me/51906469942?text=Hola%20BURGA%2C%20quisiera%20hacer%20una%20consulta."
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar a BURGA por WhatsApp">
+    W
+  </a>
+
+  <script>
+    (function () {
+      const menuButton = document.getElementById("smp-menu-button");
+      const navigation = document.getElementById("smp-navigation");
+      const servicesDropdown = document.getElementById("smp-services-dropdown");
+      const servicesButton = servicesDropdown.querySelector(".smp-dropdown-button");
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("smp-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Cerrar menú" : "Abrir menú"
+        );
+        menuButton.textContent = isOpen ? "✕" : "☰";
+      });
+
+      servicesButton.addEventListener("click", function () {
+        const isOpen = servicesDropdown.classList.toggle("smp-dropdown-open");
+        servicesButton.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navigation.classList.remove("smp-open");
+          servicesDropdown.classList.remove("smp-dropdown-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Abrir menú");
+          menuButton.textContent = "☰";
+          servicesButton.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
